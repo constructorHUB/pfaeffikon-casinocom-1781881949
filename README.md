@@ -1,1 +1,16 @@
-# pfaeffikon-casinocom-1781881949
+# pfaeffikon-casino.com
+
+
+
+Built on: 2026-06-19 15:12:32
+
+Available pages:
+- index
+- restaurants
+- online
+- vip
+- events
+- uberuns
+- nutzungsbedingungen
+- datenschutz
+- faq

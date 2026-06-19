@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+
+<head>
+    <meta charset="utf-8">
+    <script src="./common.js"></script>
+    <script src="./pages.js"></script>
+
+    <link rel="manifest" href="./manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+    <link rel="preload" as="image" href="_assets/images/1781868984-logo-1.svg" fetchpriority="high">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./index.css">
+    <meta name="theme-color" content="">
+    <title>Events | Gästeerlebnisse im Pfaeffikon Casino</title>
+    <meta name="description"
+          content="Entdecken Sie die Events-Seite unseres Pfaeffikon Casinos mit positiver Kommunikation und klaren Informationen für unsere Gäste.">
+    <link rel="canonical" href="https://pfaeffikon-casino.com/events">
+    <meta property="og:title" content="Events | Gästeerlebnisse im Pfaeffikon Casino">
+    <meta property="og:description"
+          content="Entdecken Sie die Events-Seite unseres Pfaeffikon Casinos mit positiver Kommunikation und klaren Informationen für unsere Gäste.">
+    <meta property="og:url" content="https://pfaeffikon-casino.com/events">
+    <meta property="og:site_name" content="Events | Gästeerlebnisse im Pfaeffikon Casino">
+    <meta property="og:locale" content="de-CH">
+    <meta property="og:image" content="_assets/images/1781868915-main.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="pfaeffikon-casino.com/events">
+    <meta name="twitter:title" content="Events | Gästeerlebnisse im Pfaeffikon Casino">
+    <meta name="twitter:description"
+          content="Entdecken Sie die Events-Seite unseres Pfaeffikon Casinos mit positiver Kommunikation und klaren Informationen für unsere Gäste.">
+    <meta name="twitter:image" content="_assets/images/1781868915-main.webp">
+    <meta name="twitter:image:width" content="1200">
+    <meta name="twitter:image:height" content="630">
+    <link rel="icon" href="_assets/images/1781868918-favicon.svg" type="image/x-icon" sizes="16x16">
+    <meta name="language" content="de-CH">
+    <link rel="apple-touch-icon" href="_assets/images/1781868887-favicon.svg" sizes="96x96">
+    <link rel="icon" href="_assets/images/1781868887-favicon.svg" type="image/webp" sizes="192x192">
+
+    <link rel="preload" href="_assets/images/1781868945-main.webp" as="image" fetchpriority="high">
+
+</head>
+
+<body>
+<svg
+        style="display: none"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 256 256"
+>
+    <symbol id="minus-icon" viewBox="0 0 256 256">
+        <path
+                fill="#F9B000"
+                d="M228 128a12 12 0 0 1-12 12H40a12 12 0 0 1 0-24h176a12 12 0 0 1 12 12"
+        />
+    </symbol>
+</svg>
+
+<svg
+        style="display: none"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 32 32"
+>
+    <symbol id="globe-icon" viewBox="0 0 32 32">
+        <path
+                fill="#4283BC"
+                d="M32.032 16c0-8.501-6.677-15.472-15.072-15.969-0.173-0.019-0.346-0.032-0.523-0.032-0.052 0-0.104 0.005-0.156 0.007-0.093-0.002-0.186-0.007-0.281-0.007-8.84 0-16.032 7.178-16.032 16.001s7.192 16.001 16.032 16.001c0.094 0 0.188-0.006 0.281-0.008 0.052 0.002 0.104 0.008 0.156 0.008 0.176 0 0.349-0.012 0.523-0.032 8.395-0.497 15.072-7.468 15.072-15.969zM29.049 21.151c-0.551-0.16-1.935-0.507-4.377-0.794 0.202-1.381 0.313-2.84 0.313-4.357 0-1.196-0.069-2.354-0.197-3.469 3.094-0.37 4.45-0.835 4.54-0.867l-0.372-1.050c0.695 1.659 1.080 3.478 1.080 5.386 0 1.818-0.352 3.555-0.987 5.151zM8.921 16c0-1.119 0.074-2.212 0.21-3.263 1.621 0.127 3.561 0.222 5.839 0.243v6.939c-2.219 0.021-4.114 0.111-5.709 0.234-0.22-1.319-0.34-2.715-0.34-4.154zM16.967 2.132c2.452 0.711 4.552 4.115 5.492 8.628-1.512 0.12-3.332 0.209-5.492 0.229v-8.857zM14.971 2.156v8.832c-2.136-0.021-3.965-0.109-5.502-0.226 0.96-4.457 3.076-7.836 5.502-8.606zM14.971 21.913l0 7.929c-2.263-0.718-4.256-3.705-5.293-7.719 1.492-0.11 3.253-0.189 5.292-0.21zM16.967 29.868l-0-7.955c2.061 0.020 3.814 0.102 5.288 0.217-1.019 4.067-3 7.076-5.288 7.738zM16.967 19.92l0-6.939c2.291-0.021 4.218-0.118 5.818-0.25 0.131 1.053 0.203 2.147 0.203 3.268 0 1.442-0.116 2.84-0.329 4.16-1.575-0.128-3.462-0.219-5.692-0.24zM28.588 9.81c-0.302 0.094-1.564 0.453-4.094 0.751-0.564-2.998-1.584-5.561-2.91-7.412 3.048 1.325 5.535 3.697 7.005 6.661zM11.213 2.831c-1.632 1.873-2.963 4.568-3.691 7.754-2.265-0.245-3.623-0.534-4.166-0.665 1.585-3.27 4.407-5.836 7.856-7.088zM2.614 11.787c0.385 0.104 1.841 0.467 4.549 0.766-0.155 1.107-0.24 2.26-0.24 3.447 0 1.509 0.136 2.96 0.383 4.334-2.325 0.251-3.755 0.552-4.396 0.706-0.607-1.566-0.944-3.264-0.944-5.041 0-1.467 0.228-2.883 0.649-4.213zM3.784 22.886c0.727-0.154 2.029-0.39 3.956-0.591 0.759 2.803 1.993 5.175 3.473 6.874-3.16-1.148-5.79-3.398-7.429-6.282v0zM21.583 28.849c1.195-1.665 2.14-3.907 2.728-6.525 1.982 0.227 3.226 0.494 3.853 0.652-1.5 2.596-3.808 4.669-6.581 5.873z">
+        </path>
+    </symbol>
+</svg>
+
+<svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="star-icon" viewBox="0 0 32 31">
+        <path d="M10.0431 24.5932L15.8898 21.0667L21.7365 24.6396L20.2052 17.9577L25.3559 13.5031L18.5811 12.8999L15.8898 6.58913L13.1985 12.8535L6.42371 13.4567L11.5744 17.9577L10.0431 24.5932ZM15.8898 25.4285L8.187 30.0687C7.84672 30.2853 7.49096 30.3781 7.11975 30.3471C6.74853 30.3162 6.42371 30.1925 6.1453 29.9759C5.86688 29.7594 5.65034 29.489 5.49566 29.1648C5.34099 28.8406 5.31005 28.4768 5.40286 28.0734L7.44456 19.3034L0.623417 13.4103C0.314068 13.1319 0.121034 12.8145 0.0443157 12.4581C-0.0324028 12.1017 -0.00951111 11.754 0.112991 11.415C0.235493 11.0759 0.421103 10.7975 0.669819 10.5797C0.918536 10.362 1.25882 10.2227 1.69067 10.1621L10.6927 9.37327L14.1729 1.11366C14.3276 0.742438 14.5676 0.464023 14.8931 0.278414C15.2185 0.0928044 15.5507 0 15.8898 0C16.2288 0 16.5611 0.0928044 16.8865 0.278414C17.2119 0.464023 17.452 0.742438 17.6067 1.11366L21.0869 9.37327L30.0889 10.1621C30.522 10.224 30.8623 10.3632 31.1098 10.5797C31.3572 10.7963 31.5428 11.0747 31.6666 11.415C31.7903 11.7553 31.8138 12.1036 31.7371 12.46C31.6604 12.8163 31.4667 13.1331 31.1562 13.4103L24.335 19.3034L26.3767 28.0734C26.4695 28.4756 26.4386 28.8394 26.2839 29.1648C26.1292 29.4902 25.9127 29.7606 25.6343 29.9759C25.3559 30.1912 25.0311 30.315 24.6598 30.3471C24.2886 30.3793 23.9329 30.2865 23.5926 30.0687L15.8898 25.4285Z" fill="#F9B000"/>
+    </symbol>
+</svg>
+
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 256 256"
+>
+    <symbol id="plus-icon" viewBox="0 0 256 256">
+        <path
+                fill="#F9B000"
+                d="M228 128a12 12 0 0 1-12 12h-76v76a12 12 0 0 1-24 0v-76H40a12 12 0 0 1 0-24h76V40a12 12 0 0 1 24 0v76h76a12 12 0 0 1 12 12"
+        />
+    </symbol>
+</svg>
+
+<svg
+        width="33"
+        height="32"
+        viewBox="0 0 33 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <symbol id="play-icon" viewBox="0 0 33 32">
+        <path
+                d="M16.8334 0.0786133C7.9606 0.0786133 0.767578 7.20678 0.767578 15.9998C0.767578 24.7929 7.9606 31.921 16.8334 31.921C25.7061 31.921 32.8992 24.7929 32.8992 15.9998C32.8992 7.20678 25.7061 0.0786133 16.8334 0.0786133ZM22.3861 16.8438L14.3532 21.8192C14.1907 21.9197 14.0059 21.9703 13.821 21.9703C13.6536 21.9703 13.4859 21.929 13.3342 21.8454C13.015 21.67 12.8169 21.3372 12.8169 20.9752V11.0244C12.8169 10.6625 13.015 10.3296 13.3342 10.1543C13.6533 9.97788 14.0436 9.98857 14.3532 10.1805L22.3861 15.1559C22.6796 15.3381 22.858 15.6568 22.858 15.9998C22.858 16.3428 22.6796 16.6616 22.3861 16.8438Z"
+                fill="#4283BC"
+        />
+    </symbol>
+</svg>
+
+<svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <symbol id="information-outline" viewBox="0 0 20 20">
+        <path
+                d="M9 7H11V5H9V7ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10 0C8.68678 0 7.38642 0.258658 6.17317 0.761205C4.95991 1.26375 3.85752 2.00035 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C3.85752 17.9997 4.95991 18.7362 6.17317 19.2388C7.38642 19.7413 8.68678 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7362 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0ZM9 15H11V9H9V15Z"
+                fill="#222829"
+        />
+    </symbol>
+</svg>
+
+<div class="wrapper">
+    <header class="header" id="top">
+        <div class="headerBlock">
+            <div class="headerLogoContainer"><a href="/" aria-label="Main page"><img class="header__logo logo"
+                                                                                                     src="_assets/images/1781868984-logo-1.svg" alt="Pfaeffikon Casino" /></a></div>
+
+            <div class="navBlockMain">
+
+                <!-- Main Navigation -->
+                <nav>
+                    <button class="hamburger" aria-label="Toggle navigation menu">
+                        <span></span>
+                    </button>
+
+                    <ul class="nav__list nav__list--header">
+
+                        <li><a href="index">index</a></li>
+                        <li><a href="restaurants">Restaurants</a></li>
+                        <li><a href="online">Online</a></li>
+                        <li><a href="vip">VIP</a></li>
+                        <li><a href="events">Events</a></li>
+                        <li><a href="uberuns">Über uns</a></li>
+                        <li><a href="nutzungsbedingungen">Nutzungsbedingungen</a></li>
+                        <li><a href="datenschutz">Datenschutz</a></li>
+                        <li><a href="faq">FAQ</a></li>
+
+                    </ul>
+                </nav>
+                <!-- CTA buttons -->
+                <div class="btn__list">
+<!--                    <div class="nav__item">-->
+<!--                        <a-->
+<!--                                class="nav__link"-->
+<!--                                target="_blank"-->
+<!--                                href="casino.html?id=example-offer-id"-->
+<!--                                aria-label=""-->
+<!--                                id="navSignUp"-->
+<!--                        >-->
+<!--                            -->
+<!--                        </a>-->
+<!--                    </div>-->
+
+                    <div class="nav__item nav__itemLarge">
+                        <a
+                                class="nav__link nav__linkLarge"
+                                target="_blank"
+                                href="casino.html?id=example-offer-id"
+                                aria-label="Jetzt spielen"
+                                id="navPlayNow"
+                        >
+                            Jetzt spielen
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="main">
+        <section class="heroContainer">
+            <div class="hero">
+                <div class="heroBlock block">
+                    <div class="heroGroup">
+                        <div class="heroTextGroup">
+                            <p class="heroText heroTextDesktop">Exklusives Willkommensangebot von</p>
+                            <p class="heroText heroTextMobile">Exklusives Willkommensangebot von</p>
+                            <p class="heroText heroTextBonus" id="bonusText"></p>
+                        </div><a target="_blank" class="heroLink" id="bonusLink" href="/" aria-label="Spiel starten"><span
+                            class="heroButton btn btn--large">Bonus sichern</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="heroUnder">
+                <h1 class="heroText heroMainTitle">Events in unserem Pfaeffikon Casino</h1>
+            </div>
+        </section>
+        <div class="historyCircleContainer">
+            <section class="history">
+                <div class="container">
+                    <div class="historyBlock block">
+                        <h2 class="historyTitle title">Swiss Casino Pfäffikon Events – Casino-Nächte, Turniere, Shows und besondere Erlebnisse</h2>
+                        <div class="historyDescription">
+
+<p>
+Im Swiss Casino Pfäffikon gestalten wir Events als lebendige Verbindung aus Spiel, Unterhaltung, Bar-Kultur, Gastronomie und besonderer Abendstimmung. Unsere Veranstaltungen richten sich an Gäste, die mehr erleben möchten als einen klassischen Casinobesuch. Bei uns wird der Spielsaal zur Bühne für spannende Aktionen, gesellige Formate, Jackpot-Momente, Pokerturniere, saisonale Specials und Abende mit echter Casino-Energie. Wir schaffen Events, die den Nervenkitzel von Spielautomaten, Roulette, Black Jack, Poker und Live Games mit Musik, Drinks, Begegnungen und stilvoller Atmosphäre verbinden. Jeder Event im Swiss Casino Pfäffikon ist darauf ausgelegt, den Abend abwechslungsreich, komfortabel und unvergesslich zu machen.
+</p>
+<br>
+
+<p>
+Unsere Eventwelt passt perfekt zum Charakter unseres Hauses. Als Casino mit urbanem Themenambiente am oberen Zürichsee verbinden wir modernes Entertainment mit dem Gefühl einer aufregenden City-Night. Gäste erleben bei uns Roulettekessel, Kartenmomente, Jackpot-Spannung, Bar-Atmosphäre und kulinarische Pausen in einem kompakten und hochwertigen Umfeld. Wer einen Abend mit Freunden plant, ein besonderes Date sucht, nach einem Business-Dinner noch Unterhaltung erleben möchte oder einen lebendigen Wochenendabend gestalten will, findet bei uns viele Möglichkeiten. Swiss Casino Pfäffikon Events sind ideal für spontane Besuche, geplante Gruppenabende, Clubmomente, Poker-Fans und Gäste, die das Casino-Feeling intensiv erleben möchten.
+</p>
+<br>
+
+<p>
+Zu unseren beliebtesten Eventformaten gehört die Gambling Night. Dabei steht der gemeinsame Spielspass im Vordergrund: Gäste entdecken verschiedene Casinospiele, sammeln Promo-Jetons, erleben interaktive Spielmomente und geniessen eine energiegeladene Atmosphäre. Dieses Format eignet sich besonders für Besucherinnen und Besucher, die Casino-Unterhaltung auf lockere Weise kennenlernen möchten. Wir verbinden Spiel, Preise, Spannung und Party-Stimmung zu einem Abend, der besonders einladend und dynamisch wirkt. Gerade für Gruppen, Freundeskreise und neugierige Gäste ist die Gambling Night ein starker Einstieg in die Welt von Swiss Casino Pfäffikon.
+</p>
+<br>
+
+<p>
+Auch Jackpot Bingo gehört zu den Eventformaten, die unseren Gästen regelmässig viel Freude bereiten. Das Spiel ist einfach zugänglich, gesellig und sorgt für gemeinsame Gewinnmomente. Gäste können unterschiedliche Preise gewinnen und erleben ein Format, das perfekt zwischen klassischem Casinoabend und unterhaltsamem Community-Event liegt. Durch den zusätzlichen Jackpot-Reiz bleibt jede Runde spannend, während die Atmosphäre leicht, positiv und kommunikativ bleibt. Wir nutzen Jackpot Bingo, um Casino-Unterhaltung spielerisch, gemeinschaftlich und abwechslungsreich zu gestalten.
+</p>
+<br>
+
+<p>
+Für Poker-Fans bietet Swiss Casino Pfäffikon besondere Turnier- und Pokerformate. Texas Hold’em No Limit, Ultimate Texas Hold’em und Online-Qualifikationen rund um grössere Poker-Events sprechen Gäste an, die strategisches Spiel, Turnierdruck und starke Entscheidungen lieben. Unsere Poker-Events verbinden Konzentration, Wettbewerb und Casino-Atmosphäre auf besonders intensive Weise. Gleichzeitig ergänzen Online-Pokeraktionen, Freerolls, Leaderboards, Cash Games und Qualifikationsformate das Live-Erlebnis. So entsteht eine Eventwelt, in der Poker nicht nur ein Spiel ist, sondern eine komplette Reise vom digitalen Einstieg bis zum Live-Moment.
+</p>
+<br>
+
+<p>
+Saisonale Veranstaltungen und Themenabende geben unserem Eventkalender zusätzliche Vielfalt. Mystery Night, besondere Feiertagsaktionen, Sommerformate, saisonale Challenges, Spezialpromotionen und thematisch dekorierte Abende sorgen dafür, dass Gäste immer wieder neue Eindrücke erleben. Wir inszenieren solche Events mit einem klaren Ziel: Der Besuch soll anders, besonderer und erinnerungswürdiger sein als ein gewöhnlicher Abend. Dabei bleiben die Wege kurz und der Komfort hoch, denn Spielsaal, Gambler’s Bar, KAORI Restaurant, OLEA Restaurant und Hotelumfeld ergänzen sich ideal. Gäste können also spielen, essen, trinken, feiern und entspannen, ohne den Erlebnisfluss zu unterbrechen.
+</p>
+<br>
+
+<p>
+Unsere Events sind auch für Gäste attraktiv, die das Casino mit Gastronomie verbinden möchten. Vor dem Event bietet sich ein Dinner im KAORI Restaurant mit japanischen Spezialitäten oder im OLEA Restaurant mit mediterraner Küche an. Während des Abends ist die Gambler’s Bar der perfekte Ort für Cocktails, Drinks und kurze Pausen zwischen den Programmpunkten. Nach einem Pokerturnier, einer Gambling Night oder einer Jackpot-Aktion können Gäste den Abend entspannt in der Bar ausklingen lassen. So entsteht ein vollständiges Play-&-Dine-Erlebnis, das Casino-Unterhaltung, kulinarische Qualität und Lounge-Atmosphäre miteinander verbindet.
+</p>
+<br>
+
+<p>
+Für private und geschäftliche Anlässe bieten wir ausserdem Event-Casino als besonderes Erlebnisformat. Damit bringen wir echtes Casino-Feeling mit professionellen Croupiers, Spieltischen und stilvoller Betreuung an ausgewählte Orte. Event-Casino eignet sich für Firmenfeiern, Kundenanlässe, Geburtstage, Galas, After-Work-Formate und exklusive Gruppenabende. Die Gäste erleben Roulette, Black Jack oder weitere Casinospiele in einem unterhaltsamen Rahmen, der Spannung und Eleganz vereint. Wir machen Casino-Unterhaltung damit auch ausserhalb unseres Hauses erlebbar und schaffen ein Event-Highlight mit hohem Erinnerungswert.
+</p>
+<br>
+
+<div style="width:100%; max-width:100%; overflow:hidden;">
+  <table style="width:100%; max-width:100%; border-collapse:collapse; table-layout:fixed; font-family:Arial, sans-serif; font-size:clamp(9px, 2.2vw, 14px); color:#ffffff; background:transparent;">
+    
+    <tr>
+      <th style="width:22%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Eventformat
+      </th>
+      <th style="width:28%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Erlebnis
+      </th>
+      <th style="width:26%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Ideal für
+      </th>
+      <th style="width:24%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Besonderheiten
+      </th>
+    </tr>
+
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Gambling Night
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Unterhaltsamer Casinoabend mit Promo-Jetons, Spielmomenten, Preisen, Bar-Atmosphäre und lebendiger Stimmung.
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Gruppen, Freunde, neue Gäste, Wochenendbesuche und alle, die Casino-Feeling locker kennenlernen möchten.
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Party-Stimmung, interaktive Spiele und attraktive Gewinnchancen in entspannter Atmosphäre.
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Jackpot Bingo
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Geselliges Bingo-Format mit Preisen, Jackpot-Reiz und einfacher Teilnahme.
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Gäste, die ein leicht zugängliches, gemeinschaftliches und spannendes Spiel-Event suchen.
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Perfekt als unterhaltsame Ergänzung zu Slots, Roulette, Black Jack und Barbesuch.
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Pokerturniere
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Turnieratmosphäre, Texas Hold’em No Limit, Qualifikationen, strategisches Spiel und starke Wettbewerbsmomente.
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Poker-Fans, Turnierspieler, strategische Gäste und alle, die Kartenentscheidungen lieben.
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Verbindung von Live-Poker, Online-Qualifikation, Community und Finalmomenten.
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Mystery Night
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Themenabend mit besonderer Atmosphäre, Spannung, stilvoller Inszenierung und überraschenden Momenten.
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Gäste, die einen aussergewöhnlichen Casinoabend mit besonderem Charakter suchen.
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Ideal für saisonale Abende, Gruppenbesuche und stimmungsvolle Casino-Erlebnisse.
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Jackpot Events
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Spielmomente rund um Automaten-Jackpots, Royal Jackpot, BlackJackPot und progressive Gewinnsysteme.
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Spielerinnen und Spieler, die zusätzliche Spannung, grosse Gewinnmomente und dynamische Casino-Action schätzen.
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Bis zu mehrere Jackpot-Formate im Haus, darunter Automaten-Jackpots und Tischspiel-Jackpots.
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Saisonale Specials
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Wechselnde Aktionen, saisonale Challenges, Feiertagsabende, Food-Formate und thematische Unterhaltung.
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Stammgäste, Eventbesucher, Gruppen und alle, die bei jedem Besuch neue Highlights entdecken möchten.
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Abwechslungsreicher Eventkalender mit frischen Themen, Promotionen und besonderen Momenten.
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Event-Casino
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Mobiles Casino-Erlebnis mit professionellen Croupiers, Spieltischen und echtem Casino-Feeling.
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Firmenfeiern, Geburtstage, Galas, Kundenanlässe, Gruppenabende und private Events.
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Casino-Atmosphäre an einem Ort Ihrer Wahl mit stilvoller Betreuung und hoher Erlebniswirkung.
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Play & Dine Events
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Kombination aus Restaurant, Gambler’s Bar, Spielsaal, Eventformat und Lounge-Momenten.
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Gäste, die Dinner, Drinks, Casino und Unterhaltung in einem Abend verbinden möchten.
+      </td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Kurze Wege zwischen KAORI, OLEA, Gambler’s Bar und Casino Floor.
+      </td>
+    </tr>
+
+  </table>
+</div>
+
+<br>
+
+<h3 style = "font-weight: bold; font-size: 24px;">
+Gambling Night im Swiss Casino Pfäffikon
+</h3>
+<ul>
+  <li>• Unsere Gambling Night bringt Spiel, Unterhaltung, Promo-Jetons, Preise und lebendige Casino-Stimmung in einen einzigen Abend.</li>
+  <li>• Gäste erleben interaktive Spielmomente und entdecken die Welt von Roulette, Black Jack und weiteren Casinoformaten auf besonders zugängliche Weise.</li>
+  <li>• Das Format eignet sich ideal für Gruppen, Freundeskreise und Gäste, die einen Abend mit Spielspass und Party-Atmosphäre suchen.</li>
+  <li>• Wir schaffen eine dynamische Umgebung, in der Nervenkitzel, Musik, Drinks und Gewinnerlebnisse perfekt zusammenspielen.</li>
+  <li>• Die Gambling Night ist ein starkes Event für alle, die Casino-Unterhaltung intensiv und gleichzeitig locker erleben möchten.</li>
+</ul>
+<br>
+
+<h3 style = "font-weight: bold; font-size: 24px;">
+Poker-Events und Turniermomente
+</h3>
+<ul>
+  <li>• Unsere Poker-Events richten sich an Gäste, die Strategie, Konzentration, Wettbewerb und echte Kartenentscheidungen lieben.</li>
+  <li>• Texas Hold’em No Limit und Ultimate Texas Hold’em sorgen für intensive Spielmomente am Tisch.</li>
+  <li>• Online-Qualifikationen, Freerolls, Leaderboards und besondere Pokeraktionen erweitern das Event-Erlebnis digital.</li>
+  <li>• Swiss Poker Championship Formate schaffen eine Verbindung zwischen Online-Spiel, Live-Finalmomenten und starker Poker-Community.</li>
+  <li>• Poker-Events im Swiss Casino Pfäffikon sind ideal für ambitionierte Spielerinnen und Spieler ebenso wie für Gäste, die Turnierluft erleben möchten.</li>
+</ul>
+<br>
+
+<h3 style = "font-weight: bold; font-size: 24px;">
+Jackpot Bingo und Community-Events
+</h3>
+<ul>
+  <li>• Jackpot Bingo verbindet einfache Regeln, gesellige Stimmung und attraktive Gewinnmomente.</li>
+  <li>• Das Format ist besonders beliebt, weil Gäste ohne komplizierte Vorbereitung teilnehmen und den Abend gemeinsam erleben können.</li>
+  <li>• Jede Runde bringt neue Spannung, denn der Jackpot-Charakter verstärkt den Reiz des Spiels.</li>
+  <li>• Jackpot Bingo eignet sich ideal als Ergänzung zu Slots, Tischspielen, Barbesuch und Dinner.</li>
+  <li>• Wir nutzen Community-Events, um Casino-Unterhaltung noch zugänglicher, kommunikativer und lebendiger zu machen.</li>
+</ul>
+<br>
+
+<h3 style = "font-weight: bold; font-size: 24px;">
+Themenabende und saisonale Specials
+</h3>
+<ul>
+  <li>• Mystery Night und andere Themenabende bringen besondere Inszenierungen, Dekorationen und stimmungsvolle Casino-Momente.</li>
+  <li>• Saisonale Specials sorgen dafür, dass der Eventkalender abwechslungsreich bleibt und Gäste immer wieder neue Highlights entdecken.</li>
+  <li>• Feiertagsaktionen, Sommerformate, Challenges und Spezialpromotionen machen den Casinoabend noch individueller.</li>
+  <li>• Themenabende eignen sich besonders für Gäste, die neben dem Spiel auch Atmosphäre, Überraschung und Entertainment suchen.</li>
+  <li>• Wir verbinden saisonale Stimmung mit Roulette, Black Jack, Slots, Drinks und einer lebendigen Lounge-Kultur.</li>
+</ul>
+<br>
+
+<h3 style = "font-weight: bold; font-size: 24px;">
+Jackpot Events und Gewinnmomente
+</h3>
+<ul>
+  <li>• Im Swiss Casino Pfäffikon spielen Gäste um verschiedene Jackpot-Formate an Automaten und ausgewählten Tischspielen.</li>
+  <li>• Beliebte Automaten-Jackpots wie Cash Connection, Bell Link, Prosperity Link und weitere progressive Formate bringen zusätzliche Spannung in den Spielsaal.</li>
+  <li>• Royal Jackpot an Black Jack und Ultimate Texas Hold’em ergänzt die Tischspielwelt mit besonderen Gewinnchancen.</li>
+  <li>• BlackJackPot schafft zusätzliche Spannung, weil Jackpot-Momente am Tisch gemeinschaftlich erlebt werden.</li>
+  <li>• Jackpot Events eignen sich ideal für Gäste, die grosse Momente, schnelle Emotionen und progressiven Nervenkitzel suchen.</li>
+</ul>
+<br>
+
+<h3 style = "font-weight: bold; font-size: 24px;">
+Event-Casino für private und geschäftliche Anlässe
+</h3>
+<ul>
+  <li>• Mit unserem Event-Casino bringen wir echte Casino-Atmosphäre an einen Ort Ihrer Wahl.</li>
+  <li>• Professionelle Croupiers, stilvolle Spieltische und unterhaltsame Spielabläufe machen Firmenfeiern, Geburtstage und Galas besonders eindrucksvoll.</li>
+  <li>• Gäste erleben Casino-Spiele in einem sicheren, charmanten und hochwertigen Rahmen.</li>
+  <li>• Event-Casino eignet sich für Kundenevents, Mitarbeiterabende, Jubiläen, After-Work-Formate und exklusive Gruppenveranstaltungen.</li>
+  <li>• Wir schaffen ein mobiles Casino-Erlebnis, das Unterhaltung, Eleganz und Interaktion wirkungsvoll verbindet.</li>
+</ul>
+<br>
+
+<h3 style = "font-weight: bold; font-size: 24px;">
+Gastronomie und Bar bei Events
+</h3>
+<ul>
+  <li>• Die Gambler’s Bar ist der ideale Treffpunkt vor, während und nach unseren Events.</li>
+  <li>• Cocktails, Drinks und Lounge-Atmosphäre ergänzen Gambling Night, Pokerturniere, Jackpot Bingo und Themenabende perfekt.</li>
+  <li>• KAORI Restaurant bietet japanische Spezialitäten für Gäste, die ihren Eventabend mit Sushi, Sashimi oder Bowls beginnen möchten.</li>
+  <li>• OLEA Restaurant ergänzt das Erlebnis mit mediterraner Küche, Weinbegleitung und entspannter Dinner-Atmosphäre.</li>
+  <li>• Play & Dine ist ideal für Gäste, die Event, Casino, Restaurant und Bar in einem hochwertigen Abend verbinden möchten.</li>
+</ul>
+<br>
+
+<h3 style = "font-weight: bold; font-size: 24px;">
+Events für Gruppen und besondere Abende
+</h3>
+<ul>
+  <li>• Swiss Casino Pfäffikon Events eignen sich hervorragend für Freundeskreise, Paare, Teams, Business-Gäste und Stammgäste.</li>
+  <li>• Die Kombination aus Spielsaal, Bar, Restaurants und Eventformaten sorgt für kurze Wege und ein nahtloses Erlebnis.</li>
+  <li>• Gruppen können den Abend flexibel gestalten: Dinner, Casino, Event, Drinks und Lounge-Ausklang.</li>
+  <li>• Unsere Events machen den Casinobesuch lebendiger und eröffnen immer wieder neue Gründe für einen Besuch.</li>
+  <li>• Wir gestalten besondere Abende mit Energie, Service, Stil und echter Swiss Casino Pfäffikon Atmosphäre.</li>
+</ul>
+<br>
+
+<h3 style = "font-weight: bold; font-size: 24px;">
+Warum Events im Swiss Casino Pfäffikon?
+</h3>
+<ul>
+  <li>• Wir verbinden Casino-Entertainment mit Bar, Gastronomie, Poker, Jackpots und saisonalen Highlights.</li>
+  <li>• Unsere Eventformate schaffen Abwechslung für neue Gäste und regelmässige Besucherinnen und Besucher.</li>
+  <li>• Durch die Nähe zu Gambler’s Bar, KAORI Restaurant, OLEA Restaurant und Hotelumfeld entsteht ein vollständiger Abend an einem Ort.</li>
+  <li>• Die Mischung aus Spiel, Preisen, Musik, Drinks und Atmosphäre macht jeden Event besonders.</li>
+  <li>• Swiss Casino Pfäffikon Events stehen für Unterhaltung, Stil, Spannung und unvergessliche Casino-Momente.</li>
+</ul>
+<br>
+
+</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="faq">
+            <div class="container">
+                <div class="faqBlock block">
+                    <h2 class="faqTitle title"><span>FAQ </span></h2>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="gibt_es_spielautomaten_in_unserem_casino"/><label
+                            class="faqLabel" for="gibt_es_spielautomaten_in_unserem_casino">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Gibt es Spielautomaten in unserem Casino? </span></label>
+                        <div class="faqContent">
+                            <p>Informationen zu Spielautomaten werden über die offiziellen Casino-Informationen bereitgestellt.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="wo_knnen_unsere_gste_details_zu_spielautomaten_finden"/><label
+                            class="faqLabel" for="wo_knnen_unsere_gste_details_zu_spielautomaten_finden">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Wo können unsere Gäste Details zu Spielautomaten finden? </span></label>
+                        <div class="faqContent">
+                            <p>Unsere Gäste können Details zu Spielautomaten auf den entsprechenden Informationsseiten unseres Casinos prüfen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="footerContainer">
+        <div class="footerTop">
+            <div class="footerLogoContainer"><a href="https://pfaeffikon-casino.com/events" aria-label="Main page"><img class="footer__logo"
+                                                                                                     src="_assets/images/1781868932-logo.svg" alt="" width="140"
+                                                                                                     height="48" /></a></div>
+            <div class="footerPay">
+                <div class="payBlock"><img class="payElementGrey"
+                                           src="./assets/images/footer/payment/masterCard.svg" alt="MasterCard" /><img
+                        class="payElementColor" src="./assets/images/footer/payment/masterCard--color.svg"
+                        alt="MasterCard" title="MasterCard in Pfaeffikon Casino" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/visa.svg"
+                                           alt="Visa" /><img class="payElementColor"
+                                                             src="./assets/images/footer/payment/visa--color.svg" alt="Visa" title="Visa in Pfaeffikon Casino" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/neteller.svg"
+                                           alt="Neteller" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/neteller--color.svg" alt="Neteller" title="Neteller in Pfaeffikon Casino" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/skrill.svg"
+                                           alt="Skrill" /><img class="payElementColor"
+                                                               src="./assets/images/footer/payment/skrill--color.svg" alt="Skrill" title="Skrill in Pfaeffikon Casino" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/bitcoin.svg"
+                                           alt="Bitcoin" /><img class="payElementColor"
+                                                                src="./assets/images/footer/payment/bitcoin--color.svg" alt="Bitcoin" title="Bitcoin in Pfaeffikon Casino" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/litecoin.svg"
+                                           alt="Litecoin" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/litecoin--color.svg" alt="Litecoin" title="Litecoin in Pfaeffikon Casino" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/ethereum.svg"
+                                           alt="Etherium" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/ethereum--color.svg" alt="Etherium" title="Etherium in Pfaeffikon Casino" /></div>
+            </div>
+        </div>
+        <div class="footerMiddle">
+            <div class="footerOperator">
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gpwa.svg" alt="GPWA" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gpwa--color.svg"
+                        alt="GPWA" title="GPWA in Pfaeffikon Casino" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gambleaware.svg" alt="Gamble Aware" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gambleaware--color.svg"
+                        alt="Gamble Aware" title="Gamble Aware in Pfaeffikon Casino" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gamcare.svg" alt="Game care" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gamcare--color.svg"
+                        alt="Game care" title="Game care in Pfaeffikon Casino" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gambling-therapy.svg" alt="Gambling Therapy" /><img
+                        class="operatorElementColor"
+                        src="./assets/images/footer/operator/gambling-therapy--color.svg" alt="Gambling Therapy" title="Gambling Therapy in Pfaeffikon Casino" />
+                </div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gamban.svg" alt="Gamban" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gamban--color.svg"
+                        alt="Gamban" title="Gamban in Pfaeffikon Casino" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/betblocker.svg" alt="BetBlocker" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/betblocker--color.svg"
+                        alt="BetBlocker" title="BetBlocker in Pfaeffikon Casino" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/itech_labs.svg" alt="ITech Labs" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/itech_labs--color.svg"
+                        alt="ITech Labs" title="ITech Labs in Pfaeffikon Casino" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/ecogra.svg" alt="Ecogra" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/ecogra--color.svg"
+                        alt="Ecogra" title="Ecogra in Pfaeffikon Casino" /></div>
+            </div>
+        </div>
+        <div class="footerNavBlock">
+            <nav>
+                <ul class="nav__list--footer">
+
+                    <li class="footer__navItem"><a href="index">index</a></li>
+                    <li class="footer__navItem"><a href="restaurants">Restaurants</a></li>
+                    <li class="footer__navItem"><a href="online">Online</a></li>
+                    <li class="footer__navItem"><a href="vip">VIP</a></li>
+                    <li class="footer__navItem"><a href="events">Events</a></li>
+                    <li class="footer__navItem"><a href="uberuns">Über uns</a></li>
+                    <li class="footer__navItem"><a href="nutzungsbedingungen">Nutzungsbedingungen</a></li>
+                    <li class="footer__navItem"><a href="datenschutz">Datenschutz</a></li>
+                    <li class="footer__navItem"><a href="faq">FAQ</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="footerBottom">
+            <div class="footerBottomGroup">
+                <p class="footerBottomAge">18+</p>
+                <p class="footerBottomCopyright">Copyright © <span class="js-current-year"></span> Pfaeffikon Casino </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var playButtonName = "#play-icon";
+    var informationOutlineName =
+        "#information-outline";
+    var topCasinoButtonText = "Bonus sichern";
+    var welcomeBonusText = "Willkommensbonus";
+    var bonusDetailsButtonText = "";
+    var playNowText = "";
+    var maximumAmountText = "";
+    var wagerText = "";
+    var bonusCodeText = "";
+    var depositText = "";
+    var casinoName = "Pfaeffikon Casino";
+</script>
+
+</body>
+</html>

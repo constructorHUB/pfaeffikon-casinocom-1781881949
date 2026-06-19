@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="de-CH">
+
+<head>
+    <meta charset="utf-8">
+
+    <script src="./index.js"></script>
+    <script src="./common.js"></script>
+
+    <link rel="manifest" href="./manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2">
+    <link rel="preload" as="image" href="_assets/images/1781868984-logo-1.svg" fetchpriority="high">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./index.css">
+    <meta name="theme-color" content="">
+    <title>Pfaeffikon Casino | Unser landbasiertes Casino-Erlebnis</title>
+    <meta name="description"
+          content="Entdecken Sie unser Casino in Pfaeffikon mit einem klaren, vertrauensvollen und gästeorientierten Erlebnis.">
+    <link rel="canonical" href="https://pfaeffikon-casino.com">
+    <meta property="og:title" content="Pfaeffikon Casino | Unser landbasiertes Casino-Erlebnis">
+    <meta property="og:description"
+          content="Entdecken Sie unser Casino in Pfaeffikon mit einem klaren, vertrauensvollen und gästeorientierten Erlebnis.">
+    <meta property="og:url" content="https://pfaeffikon-casino.com">
+    <meta property="og:site_name" content="Pfaeffikon Casino | Unser landbasiertes Casino-Erlebnis">
+    <meta property="og:locale" content="de-CH">
+    <meta property="og:image" content="_assets/images/1781868915-main.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="pfaeffikon-casino.com">
+    <meta name="twitter:title" content="Pfaeffikon Casino | Unser landbasiertes Casino-Erlebnis">
+    <meta name="twitter:description"
+          content="Entdecken Sie unser Casino in Pfaeffikon mit einem klaren, vertrauensvollen und gästeorientierten Erlebnis.">
+    <meta name="twitter:image" content="_assets/images/1781868915-main.webp">
+    <meta name="twitter:image:width" content="1200">
+    <meta name="twitter:image:height" content="630">
+    <link rel="icon" href="_assets/images/1781868918-favicon.svg" type="image/x-icon" sizes="16x16">
+    <meta name="language" content="de-CH">
+    <link rel="apple-touch-icon" href="_assets/images/1781868887-favicon.svg" sizes="96x96">
+    <link rel="icon" href="_assets/images/1781868887-favicon.svg" type="image/webp" sizes="192x192">
+
+    <link rel="preload" href="_assets/images/1781868945-main.webp" as="image" fetchpriority="high">
+
+</head>
+
+<body>
+<svg
+        style="display: none"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 256 256"
+>
+    <symbol id="minus-icon" viewBox="0 0 256 256">
+        <path
+                fill="#F9B000"
+                d="M228 128a12 12 0 0 1-12 12H40a12 12 0 0 1 0-24h176a12 12 0 0 1 12 12"
+        />
+    </symbol>
+</svg>
+
+<svg
+        style="display: none"
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 32 32"
+>
+    <symbol id="globe-icon" viewBox="0 0 32 32">
+        <path
+                fill="#4283BC"
+                d="M32.032 16c0-8.501-6.677-15.472-15.072-15.969-0.173-0.019-0.346-0.032-0.523-0.032-0.052 0-0.104 0.005-0.156 0.007-0.093-0.002-0.186-0.007-0.281-0.007-8.84 0-16.032 7.178-16.032 16.001s7.192 16.001 16.032 16.001c0.094 0 0.188-0.006 0.281-0.008 0.052 0.002 0.104 0.008 0.156 0.008 0.176 0 0.349-0.012 0.523-0.032 8.395-0.497 15.072-7.468 15.072-15.969zM29.049 21.151c-0.551-0.16-1.935-0.507-4.377-0.794 0.202-1.381 0.313-2.84 0.313-4.357 0-1.196-0.069-2.354-0.197-3.469 3.094-0.37 4.45-0.835 4.54-0.867l-0.372-1.050c0.695 1.659 1.080 3.478 1.080 5.386 0 1.818-0.352 3.555-0.987 5.151zM8.921 16c0-1.119 0.074-2.212 0.21-3.263 1.621 0.127 3.561 0.222 5.839 0.243v6.939c-2.219 0.021-4.114 0.111-5.709 0.234-0.22-1.319-0.34-2.715-0.34-4.154zM16.967 2.132c2.452 0.711 4.552 4.115 5.492 8.628-1.512 0.12-3.332 0.209-5.492 0.229v-8.857zM14.971 2.156v8.832c-2.136-0.021-3.965-0.109-5.502-0.226 0.96-4.457 3.076-7.836 5.502-8.606zM14.971 21.913l0 7.929c-2.263-0.718-4.256-3.705-5.293-7.719 1.492-0.11 3.253-0.189 5.292-0.21zM16.967 29.868l-0-7.955c2.061 0.020 3.814 0.102 5.288 0.217-1.019 4.067-3 7.076-5.288 7.738zM16.967 19.92l0-6.939c2.291-0.021 4.218-0.118 5.818-0.25 0.131 1.053 0.203 2.147 0.203 3.268 0 1.442-0.116 2.84-0.329 4.16-1.575-0.128-3.462-0.219-5.692-0.24zM28.588 9.81c-0.302 0.094-1.564 0.453-4.094 0.751-0.564-2.998-1.584-5.561-2.91-7.412 3.048 1.325 5.535 3.697 7.005 6.661zM11.213 2.831c-1.632 1.873-2.963 4.568-3.691 7.754-2.265-0.245-3.623-0.534-4.166-0.665 1.585-3.27 4.407-5.836 7.856-7.088zM2.614 11.787c0.385 0.104 1.841 0.467 4.549 0.766-0.155 1.107-0.24 2.26-0.24 3.447 0 1.509 0.136 2.96 0.383 4.334-2.325 0.251-3.755 0.552-4.396 0.706-0.607-1.566-0.944-3.264-0.944-5.041 0-1.467 0.228-2.883 0.649-4.213zM3.784 22.886c0.727-0.154 2.029-0.39 3.956-0.591 0.759 2.803 1.993 5.175 3.473 6.874-3.16-1.148-5.79-3.398-7.429-6.282v0zM21.583 28.849c1.195-1.665 2.14-3.907 2.728-6.525 1.982 0.227 3.226 0.494 3.853 0.652-1.5 2.596-3.808 4.669-6.581 5.873z">
+        </path>
+    </symbol>
+</svg>
+
+<svg width="32" height="31" viewBox="0 0 32 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="star-icon" viewBox="0 0 32 31">
+        <path d="M10.0431 24.5932L15.8898 21.0667L21.7365 24.6396L20.2052 17.9577L25.3559 13.5031L18.5811 12.8999L15.8898 6.58913L13.1985 12.8535L6.42371 13.4567L11.5744 17.9577L10.0431 24.5932ZM15.8898 25.4285L8.187 30.0687C7.84672 30.2853 7.49096 30.3781 7.11975 30.3471C6.74853 30.3162 6.42371 30.1925 6.1453 29.9759C5.86688 29.7594 5.65034 29.489 5.49566 29.1648C5.34099 28.8406 5.31005 28.4768 5.40286 28.0734L7.44456 19.3034L0.623417 13.4103C0.314068 13.1319 0.121034 12.8145 0.0443157 12.4581C-0.0324028 12.1017 -0.00951111 11.754 0.112991 11.415C0.235493 11.0759 0.421103 10.7975 0.669819 10.5797C0.918536 10.362 1.25882 10.2227 1.69067 10.1621L10.6927 9.37327L14.1729 1.11366C14.3276 0.742438 14.5676 0.464023 14.8931 0.278414C15.2185 0.0928044 15.5507 0 15.8898 0C16.2288 0 16.5611 0.0928044 16.8865 0.278414C17.2119 0.464023 17.452 0.742438 17.6067 1.11366L21.0869 9.37327L30.0889 10.1621C30.522 10.224 30.8623 10.3632 31.1098 10.5797C31.3572 10.7963 31.5428 11.0747 31.6666 11.415C31.7903 11.7553 31.8138 12.1036 31.7371 12.46C31.6604 12.8163 31.4667 13.1331 31.1562 13.4103L24.335 19.3034L26.3767 28.0734C26.4695 28.4756 26.4386 28.8394 26.2839 29.1648C26.1292 29.4902 25.9127 29.7606 25.6343 29.9759C25.3559 30.1912 25.0311 30.315 24.6598 30.3471C24.2886 30.3793 23.9329 30.2865 23.5926 30.0687L15.8898 25.4285Z" fill="#F9B000"/>
+    </symbol>
+</svg>
+
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 256 256"
+>
+    <symbol id="plus-icon" viewBox="0 0 256 256">
+        <path
+                fill="#F9B000"
+                d="M228 128a12 12 0 0 1-12 12h-76v76a12 12 0 0 1-24 0v-76H40a12 12 0 0 1 0-24h76V40a12 12 0 0 1 24 0v76h76a12 12 0 0 1 12 12"
+        />
+    </symbol>
+</svg>
+
+<svg
+        width="33"
+        height="32"
+        viewBox="0 0 33 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <symbol id="play-icon" viewBox="0 0 33 32">
+        <path
+                d="M16.8334 0.0786133C7.9606 0.0786133 0.767578 7.20678 0.767578 15.9998C0.767578 24.7929 7.9606 31.921 16.8334 31.921C25.7061 31.921 32.8992 24.7929 32.8992 15.9998C32.8992 7.20678 25.7061 0.0786133 16.8334 0.0786133ZM22.3861 16.8438L14.3532 21.8192C14.1907 21.9197 14.0059 21.9703 13.821 21.9703C13.6536 21.9703 13.4859 21.929 13.3342 21.8454C13.015 21.67 12.8169 21.3372 12.8169 20.9752V11.0244C12.8169 10.6625 13.015 10.3296 13.3342 10.1543C13.6533 9.97788 14.0436 9.98857 14.3532 10.1805L22.3861 15.1559C22.6796 15.3381 22.858 15.6568 22.858 15.9998C22.858 16.3428 22.6796 16.6616 22.3861 16.8438Z"
+                fill="#4283BC"
+        />
+    </symbol>
+</svg>
+
+<svg
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+>
+    <symbol id="information-outline" viewBox="0 0 20 20">
+        <path
+                d="M9 7H11V5H9V7ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10 0C8.68678 0 7.38642 0.258658 6.17317 0.761205C4.95991 1.26375 3.85752 2.00035 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C3.85752 17.9997 4.95991 18.7362 6.17317 19.2388C7.38642 19.7413 8.68678 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 8.68678 19.7413 7.38642 19.2388 6.17317C18.7362 4.95991 17.9997 3.85752 17.0711 2.92893C16.1425 2.00035 15.0401 1.26375 13.8268 0.761205C12.6136 0.258658 11.3132 0 10 0ZM9 15H11V9H9V15Z"
+                fill="#222829"
+        />
+    </symbol>
+</svg>
+
+<div class="wrapper">
+
+    <header class="header" id="top">
+        <div class="headerBlock">
+
+            <!-- Logo -->
+            <div class="headerLogoContainer">
+                <a href="https://pfaeffikon-casino.com" aria-label="Main page">
+                    <img
+                            class="header__logo logo"
+                            src="_assets/images/1781868984-logo-1.svg"
+                            alt="Pfaeffikon Casino"
+                    />
+                </a>
+            </div>
+
+            <div class="navBlockMain">
+
+            <!-- Main Navigation -->
+            <nav>
+                <button class="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                </button>
+
+                <ul class="nav__list nav__list--header">
+
+                    <li><a href="index">index</a></li>
+                    <li><a href="restaurants">Restaurants</a></li>
+                    <li><a href="online">Online</a></li>
+                    <li><a href="vip">VIP</a></li>
+                    <li><a href="events">Events</a></li>
+                    <li><a href="uberuns">Über uns</a></li>
+                    <li><a href="nutzungsbedingungen">Nutzungsbedingungen</a></li>
+                    <li><a href="datenschutz">Datenschutz</a></li>
+                    <li><a href="faq">FAQ</a></li>
+
+                </ul>
+            </nav>
+                <!-- CTA buttons -->
+                <div class="btn__list">
+<!--                    <div class="nav__item">-->
+<!--                        <a-->
+<!--                                class="nav__link"-->
+<!--                                target="_blank"-->
+<!--                                href="casino.html?id=example-offer-id"-->
+<!--                                aria-label=""-->
+<!--                                id="navSignUp"-->
+<!--                        >-->
+<!--                            -->
+<!--                        </a>-->
+<!--                    </div>-->
+
+                    <div class="nav__item nav__itemLarge">
+                        <a
+                                class="nav__link nav__linkLarge"
+                                target="_blank"
+                                href="casino.html?id=example-offer-id"
+                                aria-label="Jetzt spielen"
+                                id="navPlayNow"
+                        >
+                            Jetzt spielen
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="main">
+        <section class="heroContainer">
+            <div class="hero">
+                <div class="heroBlock block">
+                    <div class="heroGroup">
+                        <div class="heroTextGroup">
+                            <p class="heroText heroTextDesktop">Exklusives Willkommensangebot von</p>
+                            <p class="heroText heroTextMobile">Exklusives Willkommensangebot von</p>
+                            <p class="heroText heroTextBonus" id="bonusText"></p>
+                        </div><a target="_blank" class="heroLink" id="bonusLink" href="/" aria-label="Spiel starten"><span
+                            class="heroButton btn btn--large">Bonus sichern</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="heroUnder">
+                <h1 class="heroText heroMainTitle">Unser Casino in Pfaeffikon</h1>
+            </div>
+        </section>
+        <div class="bonusesCircleContainer">
+            <section class="topCasino">
+                <div class="container">
+                    <div class="topCasinoBlock block">
+                        <h2 class="topCasinoTitle title"><span>Top-Casino <span id="countryName"></span></span>
+                        </h2>
+                        <div class="topCasinoGroup" id="casinoCardContainer">
+                            <!-- Casino cards will be dynamically inserted here --></div><button
+                            class="topCasinoButton btn btn--large" id="showMoreButton"> Alle Casino </button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <div class="advantagesCircleContainer">
+            <section class="advantages">
+                <div class="container">
+                    <div class="advantagesBlock block">
+                        <div class="advantagesDescription">
+                            <h2 class="advantagesTitle title">Vorteile</h2>
+                            <ul class="advantagesList">
+                                <li class="providersGroup"></li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Standort Pfaeffikon</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Gästefokus</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Klare Informationen</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Markenvertrauen</p>
+                                </li>
+                                <li class="advantagesItem">
+                                    <svg class="advantagesStar" width="30" height="29">
+                                        <use href="#star-icon"></use>
+                                    </svg>
+                                    <p class="advantagesText">Positives Erlebnis</p>
+                                </li>
+                                <li class="providersGroup"></li>
+                            </ul><a class="advantagesLink" id="advantagesLink" target="_blank" href="/" aria-label="Mehr erfahren"><span
+                                class="advantagesButton btn btn--large">Mehr erfahren</span></a>
+                        </div>
+                        <div class="advantagesMobile">
+                            <h2 class="advantagesTitle title advantagesAppTitle">Pfaeffikon Mobile App</h2><img
+                                class="advantagesMobilePhone" src="_assets/images/1781869978-mobile.webp" title="Pfaeffikon Casino Mobile"
+                                alt="Pfaeffikon Mobile App" />
+                            <div class="advantagesStoreGroup"><a href="/" id="appStoreLink" aria-label="Play game"
+                                                                 target="_blank"><img class="advantagesStore" width="181" height="53"
+                                                                                      src="./assets/images/advantages/app-store.webp" alt="iOs App " title="Pfaeffikon Mobile App"/></a><a
+                                    href="/" id="googlePlayLink" aria-label="Play game" target="_blank"><img
+                                    class="advantagesStore" width="181" height="54"
+                                    src="./assets/images/advantages/google-play.webp" alt="android App Pfaeffikon Mobile App" title="Pfaeffikon Mobile App" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="games" id="games">
+                <div class="container">
+                    <div class="gamesBlock block">
+                        <h2 class="gamesTitle title"><span>Beliebte Spiele</span></h2>
+                        <div class="gamesGroup" id="gamesContainer"><!-- Games will be dynamically inserted here -->
+                        </div><a target="_blank" class="gamesLink" id="allGamesLink" href="/" aria-label="Alle Spiele"><span
+                            class="gamesButton btn btn--large">Alle Spiele</span></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="historyCircleContainer">
+            <section class="history">
+                <div class="container">
+                    <div class="historyBlock block">
+                        <h2 class="historyTitle title">Über das Casino</h2>
+                        <div class="historyGroup">
+                            <div class="historyColumn">
+                                <div class="historyText">
+                                    <p class="historyDescription">Unser Casino wird durch den geprüften Bezug zu Pfaeffikon präsentiert und bietet unseren Gästen einen klaren und fokussierten Ausgangspunkt, um mehr über unsere landbasierte Casino-Präsenz zu erfahren. Wir kommunizieren mit Vertrauen, Klarheit und Respekt gegenüber jedem Gast, der verlässliche Informationen sucht.</p>
+                                    <ul class="historyList">
+                                        <li class="historyItem">Pfaeffikon ist der bestätigte Bezug für unsere Casino-Inhalte.</li>
+                                        <li class="historyItem">Unsere Casino-Kommunikation wird aus der Markenperspektive geschrieben.</li>
+                                    </ul>
+                                    <p class="historyDescription">Wir sind überzeugt, dass ein starkes Casino-Erlebnis mit Vertrauen beginnt. Deshalb basiert unser Inhalt ausschließlich auf den bestätigten Informationen, die bereitgestellt wurden, ohne ungeprüfte Details oder nicht belegte Aussagen hinzuzufügen. Unsere Gäste können eine direkte und transparente Markenstimme erwarten.</p>
+                                </div>
+                            </div>
+                            <div class="historyColumn"><img class="historyImage"
+                                                            src="_assets/images/1781870058-desktop.webp" alt="Pfaeffikon " title="Pfaeffikon Casino Desktop"/></div>
+                        </div>
+                        <p class="historyDescription">Unser Casino in Pfaeffikon wird mit einem positiven und nutzerorientierten Ansatz beschrieben. Wir konzentrieren uns darauf, Inhalte zu schaffen, die leicht verständlich, suchmaschinenrelevant und nützlich für Gäste sind, die unsere Marke über eigene Seiten entdecken möchten.
+
+Wir präsentieren unser Casino mit einem einheitlichen Ton über die Homepage sowie die Seiten Restaurants, Online, VIP, Events, Über uns, Datenschutz, Bedingungen und FAQ hinweg. Jede Seite unterstützt eine klare Markenstruktur und stellt unsere Gäste sowie ihr Erlebnis in den Mittelpunkt.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="historyCircleContainer">
+            <section class="history">
+                <div class="container">
+                    <div class="historyBlock block">
+                        <h2 class="historyTitle title">Swiss Casino Pfäffikon – Spiel, Stil und Lounge-Atmosphäre</h2>
+                        <div class="historyDescription">
+<p>
+Im Swiss Casino Pfäffikon verbinden wir ein urbanes Casino-Erlebnis mit entspannter Lounge-Kultur und persönlichem Service. Unser Casino ist an 365 Tagen im Jahr geöffnet: Sonntag bis Donnerstag von 11:00 bis 03:00 Uhr und Freitag sowie Samstag von 11:00 bis 05:00 Uhr. In unseren Spielbereichen erwarten Sie 162 Spielautomaten, eine Multi-Roulette-Zone mit 9 Terminals, American Roulette, Black Jack und Ultimate Texas Hold’em. Die Tischspiele starten täglich ab 17:00 Uhr und bringen echtes Live-Casino-Feeling in den Abend. Unsere Automatenwelt beginnt bereits ab 11:00 Uhr und bietet moderne Video-Slots, Klassiker, Jackpot-Spiele und Multi-Level-Progressives. In der Gambler’s Bar geniessen Sie Cocktails, Drinks und eine entspannte Atmosphäre zwischen den Spielmomenten. Für kulinarische Highlights stehen Ihnen KAORI Restaurant mit japanischer Küche und OLEA Restaurant mit mediterranem Genuss zur Seite. Durch die Verbindung mit SEEDAMM PLAZA und Hotel First lässt sich der Casinobesuch ideal mit Übernachtung, Dinner oder einem stilvollen Kurzaufenthalt kombinieren. Unser Eventkalender bringt regelmässig Aktionen, Jackpot-Formate, Gambling Night, saisonale Specials und gesellige Abende ins Haus. Mit dem Swiss Casinos Member Club sammeln Sie Punkte, sichern sich Geburtstagsvorteile, nehmen an Verlosungen teil und steigen Schritt für Schritt in attraktivere Level auf. Im Online-Angebot ergänzen wir das Erlebnis mit Slots, Live Casino, Poker, Bonusaktionen, Free Spins und flexiblem Spielkomfort rund um die Uhr.
+</p>
+<br>
+<div style="width:100%; max-width:100%; overflow:hidden;">
+  <table style="width:100%; max-width:100%; border-collapse:collapse; table-layout:fixed; font-family:Arial, sans-serif; font-size:clamp(9px, 2.2vw, 14px); color:#ffffff; background:transparent;">
+    <tr>
+      <th style="width:38%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Bereich
+      </th>
+      <th style="width:31%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Tage
+      </th>
+      <th style="width:31%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Zeiten
+      </th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Hauptsaal Swiss Casino Pfäffikon</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Sonntag–Donnerstag</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">11:00–03:00</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Hauptsaal Swiss Casino Pfäffikon</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Freitag–Samstag</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">11:00–05:00</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Spielautomaten</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Täglich</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Ab 11:00</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Multi-Roulette mit 9 Terminals</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Täglich</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Ab 11:00</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Dual-Live American Roulette</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Täglich</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Ab 17:00</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Tischspiele</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Sonntag–Donnerstag</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">17:00–02:00</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Tischspiele</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Freitag–Samstag</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">17:00–04:00</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Online Casino</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Täglich</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">24/7</td>
+    </tr>
+  </table>
+</div>
+<br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Swiss Casino Pfäffikon – Service, Sprachen, Zahlungen und Auszahlungen
+</h3>
+<p>
+Im Swiss Casino Pfäffikon setzen wir auf persönlichen Service, klare Kommunikation und eine angenehme Betreuung vom ersten Moment an. Unser Team unterstützt Sie am Empfang, an der Member-Club-Stelle, im Spielbereich und bei allgemeinen Fragen rund um Ihren Besuch. Wir kommunizieren mit unseren Gästen in mehreren Sprachen und begleiten Sie auf Deutsch, Englisch, Französisch und Italienisch durch Ihr Casino-Erlebnis. Dadurch fühlen sich Stammgäste, neue Besucherinnen und Besucher sowie internationale Gäste gleichermassen gut aufgehoben. Im Online Casino steht unser Support rund um die Uhr bereit und hilft bei Kontoeröffnung, Verifizierung, Zahlungen, Bonusfragen und Auszahlungen.
+</p>
+<p>
+Unsere Spielwährung ist CHF, damit Einsätze, Gewinne, Bonusguthaben, Clubpunkte und Kassenprozesse übersichtlich bleiben. Im Casino nutzen Sie Bargeld in CHF, unsere Kasse und die Member-Club-Karte für ein komfortables Spielerlebnis. Im Online Casino akzeptieren wir beliebte Einzahlungsmethoden wie TWINT, Visa, Mastercard, Diners Club, Discover, PostFinance, Post E-Finance, Apple Pay, paysafecard, Abon und Banküberweisung. Der Mindestbetrag für Online-Einzahlungen beträgt CHF 10, bei Banküberweisung CHF 20. Banküberweisungen eignen sich besonders für geplante Einzahlungen und werden in der Regel innerhalb von 3 bis 5 Werktagen bearbeitet.
+</p>
+<p>
+Für Bargeldspielerinnen und Bargeldspieler steht unsere Kasse als zentrale Anlaufstelle für Transaktionen in CHF zur Verfügung. Wer vor dem Besuch Bargeld abheben oder Fremdwährung in CHF vorbereiten möchte, kann die vorhandene Zahlungsinfrastruktur im Umfeld des Hauses bequem nutzen. Unsere Empfehlung ist ein klar definierter Spielbetrag, damit der Abend angenehm, entspannt und gut planbar bleibt. Bei digitalen Zahlungen achten wir auf hohe Sicherheitsstandards, transparente Buchungen und eine saubere Zuordnung zum persönlichen Spielkonto. TWINT ist besonders praktisch für schnelle mobile Einzahlungen, während Bank- und Kartenlösungen eine übersichtliche Transaktionshistorie ermöglichen.
+</p>
+<p>
+Online-Auszahlungen beantragen Sie direkt im Kassenbereich Ihres Spielkontos, sobald Ihr Konto vollständig verifiziert ist. Wir zahlen Gewinne auf ein Bank- oder Postkonto aus, das auf Ihren Namen registriert ist, damit Ihre Auszahlung geschützt und eindeutig zugeordnet bleibt. Reguläre Auszahlungen ab CHF 100 sind gebührenfrei, bei Auszahlungen unter CHF 100 fällt eine Bearbeitungsgebühr von CHF 5 an; Instant-Auszahlungen sind ab CHF 100 möglich und werden mit CHF 2 pro Transaktion berechnet. Reguläre Online-Auszahlungen werden von Montag bis Freitag zweimal täglich bearbeitet, während Instant Payment die Gutschrift innerhalb weniger Minuten ermöglicht. Gewinne aus Spielbankenspielen im Casino sind in der Regel steuerfrei, sofern sie nicht aus selbstständiger Erwerbstätigkeit stammen; bei Online-Gewinnen gelten die aktuellen steuerlichen Freibeträge und gesetzlichen Vorgaben.
+</p>
+<br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Swiss Casino Pfäffikon – Besuchsregeln, Dresscode, Eintritt und Anreise
+</h3>
+<p>
+Im Swiss Casino Pfäffikon gestalten wir Ihren Besuch stilvoll, sicher und komfortabel. Der Eintritt in unser Casino ist kostenlos und für Gäste ab 18 Jahren mit gültigem amtlichem Ausweis möglich. Für die Alters- und Identitätskontrolle akzeptieren wir ID, Pass oder Führerausweis. Unser Dresscode ist gepflegt und smart: Wir freuen uns über einen sauberen, eleganten und modernen Auftritt. In unseren Spielbereichen achten wir auf eine respektvolle Atmosphäre, klare Abläufe und ein angenehmes Miteinander. Nichtraucherinnen und Nichtraucher sowie Raucherinnen und Raucher sind willkommen, denn wir bieten auch einen bedienten Raucherbereich mit Spielautomaten. An den Spieltischen folgen Sie den Anweisungen unserer Croupiers, damit alle Gäste ein faires und hochwertiges Spielerlebnis geniessen. Unsere Garderobe ist kostenlos und macht den Abend besonders bequem. Parkhaus und Parkplätze befinden sich direkt beim Haus, sodass die Anreise mit dem Auto einfach bleibt. Auch mit öffentlichen Verkehrsmitteln oder Taxi erreichen Sie uns bequem über SEEDAMM PLAZA. Wir verbinden klare Regeln mit gastfreundlichem Service, damit Ihr Abend im Swiss Casino Pfäffikon von Anfang an entspannt beginnt.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Eintritt und Voraussetzungen
+</h3>
+<ul>
+            <li>• Der Eintritt ins Swiss Casino Pfäffikon ist kostenlos und unkompliziert.</li>
+            <li>• Der Besuch ist ab 18 Jahren mit gültigem amtlichem Ausweis möglich.</li>
+            <li>• Akzeptiert werden ID, Pass oder Führerausweis.</li>
+            <li>• Die Identitätskontrolle schützt ein sicheres und reguliertes Spielumfeld.</li>
+            <li>• Member-Club-Gäste können mit ihrer persönlichen Karte Punkte sammeln und Vorteile nutzen.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Dresscode
+</h3>
+<ul>
+            <li>• Gepflegte Kleidung ist willkommen und passt ideal zu unserer Casino-Atmosphäre.</li>
+            <li>• Smart Casual, Hemd, Bluse, Kleid, Sakko, gepflegter Denim und elegante Freizeitmode sind passende Optionen.</li>
+            <li>• Für Dinner, Barbesuch und Events darf der Look gerne etwas festlicher sein.</li>
+            <li>• Saubere, ordentliche Kleidung sorgt für einen stimmigen Auftritt in Spielsaal, Bar und Restaurant.</li>
+            <li>• Der Dresscode bleibt angenehm modern und bietet genügend Raum für persönlichen Stil.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Verhalten im Casino
+</h3>
+<ul>
+            <li>• Wir pflegen eine respektvolle, sichere und freundliche Atmosphäre.</li>
+            <li>• An den Tischen gelten die Spielregeln und die Hinweise unserer Croupiers.</li>
+            <li>• Die Swiss Casinos Member Club Karte ist persönlich und begleitet Ihr individuelles Spielerlebnis.</li>
+            <li>• In allen Bereichen achten wir auf Privatsphäre, Diskretion und angenehme Abläufe.</li>
+            <li>• Verantwortungsvolles Spielen ist Teil unseres hochwertigen Servicegedankens.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Parkieren und Anreise
+</h3>
+<ul>
+            <li>• Parkhaus und Parkplätze befinden sich direkt beim Haus.</li>
+            <li>• Für die Navigation nutzen Sie Seedammstrasse 3, 8808 Pfäffikon SZ.</li>
+            <li>• Regelmässige Gäste profitieren von attraktiven Parking-Aktionen.</li>
+            <li>• Die Anreise ist mit Auto, Taxi und öffentlichen Verkehrsmitteln bequem möglich.</li>
+            <li>• Durch die Lage bei SEEDAMM PLAZA verbinden Sie Casino, Gastronomie und Aufenthalt besonders einfach.</li>
+        </ul><br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Swiss Casino Pfäffikon – Swiss Casinos Member Club
+</h3>
+<p>
+Im Swiss Casino Pfäffikon belohnen wir Ihre Treue mit dem Swiss Casinos Member Club, unserem vielseitigen Programm für Gäste, die ihr Casino-Erlebnis noch wertvoller gestalten möchten. Die Mitgliedschaft ist kostenlos und für Personen ab 18 Jahren verfügbar. Sie registrieren sich direkt am Empfang, am Member Club Desk oder bei einem Teammitglied auf der Spielfläche. Ihre persönliche Karte erhalten Sie sofort, sodass Sie direkt Punkte sammeln können. Mit jeder Nutzung Ihrer Karte sammeln Sie Level-Punkte und Prämien-Punkte. An Spielautomaten erhalten Sie pro CHF 1 Umsatz jeweils 1 Level-Punkt und 1 Prämien-Punkt. Bei Food & Beverage sammeln Sie besonders schnell, denn pro CHF 1 Umsatz erhalten Sie 20 Level-Punkte und 20 Prämien-Punkte. Bei Live Games richtet sich die Punktevergabe nach Spieldauer, Einsatz und Spielart. Die sechs Level führen von Newcomer über Rookie, Explorer, Master und Hall of Fame bis zu Legend. Mit jedem Level steigen Ihre Vorteile, von Geburtstagsguthaben über Getränkevorteile bis hin zu exklusiven Veranstaltungen. Durch die Verifizierung aktivieren Sie zusätzliche Möglichkeiten und erhalten bis zu 3 000 Prämien-Punkte.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Registrierung
+</h3>
+<ul>
+            <li>• Die Mitgliedschaft ist kostenlos und ab 18 Jahren möglich.</li>
+            <li>• Die Anmeldung erfolgt am Empfang, am Member Club Desk oder direkt bei unserem Team.</li>
+            <li>• Für die Registrierung benötigen Sie einen gültigen amtlichen Ausweis.</li>
+            <li>• Ihre persönliche Member-Club-Karte wird sofort ausgestellt.</li>
+            <li>• Mit der Karte sammeln Sie direkt Level-Punkte und Prämien-Punkte.</li>
+            <li>• Die Karte ist persönlich und auf Ihr individuelles Spielerlebnis abgestimmt.</li>
+            <li>• Die Verifizierung erfolgt bequem über den QR-Code auf der Kartenhülle.</li>
+            <li>• Für die erste Verifizierung erhalten Sie 2 500 Prämien-Punkte.</li>
+            <li>• Für die zweite Verifizierung erhalten Sie zusätzlich 500 Prämien-Punkte.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Level und Statuspunkte
+</h3>
+<ul>
+            <li>• Newcomer – bis 3 000 Statuspunkte: Einstieg ins Programm, kostenloser Eintritt, Aktionen und CHF 20 Spielguthaben zum Geburtstag.</li>
+            <li>• Rookie – ab 3 000 Statuspunkten: 20% Rabatt auf Softgetränke und Kaffee sowie Level-Booster 1.1.</li>
+            <li>• Explorer – ab 20 000 Statuspunkten: 50% Rabatt auf Softgetränke und Kaffee, Eventraum-Rabatt und Level-Booster 1.2.</li>
+            <li>• Master – ab 120 000 Statuspunkten: CHF 20 Spielguthaben plus Geschenk, kostenlose Softgetränke und Kaffee, Parking-Vorteil und Community Events.</li>
+            <li>• Hall of Fame – ab 300 000 Statuspunkten: individuelles Geschenk, kostenlose Getränke und Food-Vorteil für eine Person, exklusive Events und Parking-Vorteil.</li>
+            <li>• Legend – ab 1 000 000 Statuspunkten: höchste Clubstufe mit individuellen Vorteilen, exklusiven Events, Getränke- und Food-Vorteil für Gast + 1.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Vorteile und Boni
+</h3>
+<ul>
+            <li>• CHF 20 Geburtstags-Spielguthaben für Member-Club-Mitglieder.</li>
+            <li>• Zusätzliche Geburtstagsüberraschung ab Level Master.</li>
+            <li>• 1 Level-Punkt und 1 Prämien-Punkt pro CHF 1 Umsatz an Spielautomaten.</li>
+            <li>• 20 Level-Punkte und 20 Prämien-Punkte pro CHF 1 Umsatz bei Food & Beverage.</li>
+            <li>• 5 000 Prämien-Punkte für Bring a Member, wenn Sie ein neues Mitglied mitbringen.</li>
+            <li>• Bis zu 3 000 Prämien-Punkte durch abgeschlossene Verifizierung.</li>
+            <li>• Level-Booster von 1.1 bis 1.5 für schnelleren Fortschritt in höheren Stufen.</li>
+            <li>• Prämien-Shop mit Gutscheinen, Accessoires, Lifestyle-Artikeln und attraktiven Geschenken.</li>
+            <li>• Einlösung von Prämien-Punkten im Gastronomieangebot.</li>
+            <li>• Punktespende ab 2 000 Prämien-Punkten in 2 000er-Schritten.</li>
+        </ul><br></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <section class="">
+            <div class="container">
+                <div class="sprovidersBlock block">
+                    <h2 class="sprovidersTitle title"> Softwareanbieter </h2>
+                    <div class="sprovidersGroup" id="providersContainer">
+                        <!-- Provider images will be dynamically inserted here --></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="historyCircleContainer">
+            <section class="history">
+                <div class="container">
+                    <div class="historyBlock block">
+                        <h2 class="historyTitle title">Swiss Casino Pfäffikon – Boni, Jackpots, Aktionen und saisonale Specials</h2>
+                        <div class="historyDescription">
+<p>
+Im Swiss Casino Pfäffikon machen wir Ihr Spielerlebnis mit Jackpots, Online-Boni, Events und saisonalen Specials noch abwechslungsreicher. Neben dem Member Club erwarten Sie eigenständige Promotionen, Gewinnformate und digitale Bonusangebote. Im Casino spielen Sie um progressive Automaten-Jackpots und um vernetzte Royal Jackpots an den Black-Jack- und Ultimate-Texas-Hold’em-Tischen. Unsere Jackpot-Welt umfasst bekannte Formate wie Cash Connection, Huff N’ Puff High Rise, Bell Link, Bell Link 2, Xtension Link und Prosperity Link. Beim BlackJackPot gewinnen teilnehmende Gäste am Tisch bei jeder Jackpot-Auszahlung zusätzlich CHF 250. Im Online Casino begrüssen wir neue Spielerinnen und Spieler mit einem Welcome Bonus bis CHF 1 400 und 100 Free Spins. Bereits durch die Verifizierung sichern Sie sich 50 Free Spins. Unsere Game-of-the-Week-Aktion bringt regelmässig attraktive Optionen wie 60 Free Spins, 15 Golden Chips oder CHF 15 Bonusguthaben. Für Poker-Fans organisieren wir starke Online-Promotions rund um die Swiss Poker Championship mit einem Live-Final-Preispool von CHF 100 000. Zusätzlich warten exklusive Pokeraktionen mit einem Gesamtwert von über CHF 40 000. Durch Jackpot Bingo, Gambling Night, Parking Deal, Foodtruck Specials und saisonale Events bleibt jeder Besuch im Swiss Casino Pfäffikon frisch und spannend.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Online-Boni und Spielangebote
+</h3>
+<ul>
+            <li>• Welcome Bonus bis CHF 1 400 – grosses Startpaket für neue Online-Spielerinnen und Online-Spieler.</li>
+            <li>• 100 Free Spins – Teil des Welcome-Angebots für ein dynamisches Slot-Erlebnis.</li>
+            <li>• 50 Free Spins für die Verifizierung – zusätzlicher Vorteil nach bestätigtem Spielkonto.</li>
+            <li>• Erste Einzahlung bis CHF 300 Bonusguthaben – 100% Bonus bei passender Einzahlung.</li>
+            <li>• Zweite Einzahlung bis CHF 100 Bonusguthaben plus Free Spins – weitere Stärkung des Startpakets.</li>
+            <li>• Dritte Einzahlung bis CHF 1 000 Bonusguthaben – der grösste Baustein des Welcome-Angebots.</li>
+            <li>• Game of the Week – wöchentlich mit Optionen wie 60 Free Spins, 15 Golden Chips oder CHF 15 Bonusguthaben.</li>
+            <li>• Saisonale Bonusaktionen – wechselnde Online-Angebote mit Free Spins, Bonusguthaben und Missionen.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Jackpots und Gewinnformate
+</h3>
+<ul>
+            <li>• Cash Connection – progressiver Automaten-Jackpot mit beliebten Novomatic-Spielen.</li>
+            <li>• Huff N’ Puff High Rise – Jackpot-Spiel mit freischaltbaren Reihen und unterhaltsamen Bonusfunktionen.</li>
+            <li>• Bell Link und Bell Link 2 – mehrstufige Jackpot-Formate mit Grand-, Major-, Minor- und Mini-Momenten.</li>
+            <li>• Xtension Link – 2-Level-Jackpot mit Grand-Startwert CHF 10 000 und Major-Startwert CHF 1 500.</li>
+            <li>• Prosperity Link – Multi-Level Progressive mit Bonus-Action und starken Gewinnmomenten.</li>
+            <li>• Royal Jackpot Black Jack – vernetzter progressiver Jackpot an den Black-Jack-Tischen.</li>
+            <li>• Royal Jackpot Ultimate Texas Hold’em – progressiver Jackpot, bei dem ein Royal Flush 100% des Jackpotwerts bringen kann.</li>
+            <li>• BlackJackPot – bei jeder Jackpot-Auszahlung gewinnen alle teilnehmenden Gäste am Tisch CHF 250.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Events und Specials
+</h3>
+<ul>
+            <li>• Jackpot Bingo – bis zu CHF 300 gewinnen und mit Jackpot-Zahl zusätzlich CHF 50 sichern.</li>
+            <li>• Parking Deal – dreimal abstempeln und anschliessend während der Aktionszeit gratis parkieren.</li>
+            <li>• Gambling Night – ein Abend mit Party-Stimmung, Spielmomenten und Casino-Atmosphäre.</li>
+            <li>• Mystery Night – thematisches Event mit besonderer Spannung und saisonalem Charakter.</li>
+            <li>• Foodtruck Plaza BITE – lockerer Genussmoment für Gäste, die Kulinarik und Spiel verbinden möchten.</li>
+            <li>• Swiss Casinos Member Club Verlosung – zusätzliche Gewinnchancen für registrierte Mitglieder.</li>
+            <li>• Swiss Poker Championship – Online-Qualifikation und Live Final mit CHF 100 000 Preispool.</li>
+            <li>• SPC Promotions über CHF 40 000 – Countdown Missions, Leaderboards, Cash Games, Twisters und Freerolls.</li>
+        </ul><br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Swiss Casino Pfäffikon – Beliebte Spiele, Slots, Roulette und Live Casino
+</h3>
+<p>
+Im Swiss Casino Pfäffikon verbinden wir klassische Casino-Spiele mit modernen Automaten, progressiven Jackpots und einem vielseitigen Online-Angebot. Im Casino erwarten Sie 162 Spielautomaten, Video-Slots, Video Poker und Multi-Level-Progressives. Roulette-Fans spielen American Roulette, Multi-Roulette mit 9 Terminals und Dual-Live American Roulette. Black Jack zählt zu unseren beliebtesten Tischspielen, weil es klare Regeln, schnelle Entscheidungen und starke Spannung bietet. Besonders charakteristisch für Pfäffikon ist Powerplay, unsere exklusive Black-Jack-Variante mit zusätzlichem Spielmoment. Ultimate Texas Hold’em bringt Poker-Feeling an den Tisch und lässt Sie gegen die Bank antreten. Unsere Jackpot-Spiele sorgen für zusätzliche Höhepunkte, sowohl an Automaten als auch an ausgewählten Tischspielen. Im Online Casino erweitern wir das Erlebnis mit Slots, Live Roulette, Live Blackjack, Live Baccarat, Game Shows und Poker. Beliebte Online-Slots wie Book of Ra Deluxe, Lucky Lady’s Charm Deluxe, Gates of Olympus, Sweet Bonanza und The Dog House Megaways bringen Vielfalt auf jedes Gerät. Live Casino mit echten Dealern schafft ein authentisches Spielerlebnis über hochwertige Streams. Poker-Fans profitieren von Turnieren, Cash Games und der Swiss Poker Championship. Durch regelmässig neue Spiele bleibt unser Angebot frisch, modern und abwechslungsreich.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Tischspiele im Casino
+</h3>
+<ul>
+            <li>• American Roulette – 4 Roulette-Tische, Mindesteinsatz ab CHF 5 und klassisches Live-Spielgefühl.</li>
+            <li>• Multi-Roulette – 9 Terminals, Mindesteinsatz CHF 1 und komfortables elektronisches Spieltempo.</li>
+            <li>• Dual-Live American Roulette – Live-Roulette mit Terminalkomfort, täglich ab 17:00 Uhr.</li>
+            <li>• Black Jack – 3 Tische, Mindesteinsatz CHF 10 und das Ziel, näher an 21 zu kommen als die Bank.</li>
+            <li>• Powerplay – exklusiv in Pfäffikon spielbare Black-Jack-Variante mit zusätzlicher Action auf 7 Boxen.</li>
+            <li>• BlackJackPot – progressiver Tischspiel-Jackpot, bei dem alle teilnehmenden Gäste am Tisch CHF 250 gewinnen, wenn der Jackpot fällt.</li>
+            <li>• Ultimate Texas Hold’em – 2 Tische, Einsätze von CHF 5 bis CHF 100 und Poker-Mechanik gegen die Bank.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Spielautomaten und Jackpots
+</h3>
+<ul>
+            <li>• Spielautomaten – 162 Slots mit Einsätzen von CHF 0.01 bis CHF 25.</li>
+            <li>• Cash Connection – progressiver Jackpot mit beliebten Novomatic-Spielen.</li>
+            <li>• Huff N’ Puff High Rise – Jackpot-Slot mit freischaltbaren Reihen und unterhaltsamen Features.</li>
+            <li>• Bell Link – vierstufiger Jackpot mit Mini-, Minor-, Major- und Grand-Momenten.</li>
+            <li>• Bell Link 2 – dynamisches Jackpot-Spiel mit Bonussequenzen und Spezial-Symbolen.</li>
+            <li>• Xtension Link – 2-Level-Progressive mit Grand- und Major-Stufe.</li>
+            <li>• Prosperity Link – Multi-Level Progressive mit Coin-Thematik und Bonus-Action.</li>
+            <li>• Video Poker – elektronische Kartenvariante für strategische Spielmomente.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Online Casino Spiele
+</h3>
+<ul>
+            <li>• Online Slots – grosse Auswahl an klassischen, modernen und jackpotbasierten Spielautomaten.</li>
+            <li>• Book of Ra Deluxe – beliebter Adventure-Slot mit bekannter Bonusfunktion.</li>
+            <li>• Lucky Lady’s Charm Deluxe – Klassiker mit Lucky-Symbolen und Free Games.</li>
+            <li>• Gates of Olympus – Slot mit Multiplikatoren und Cascading Wins.</li>
+            <li>• Sweet Bonanza – farbenfroher Slot mit Free Spins und Tumbling-Reels.</li>
+            <li>• The Dog House Megaways – Megaways-Format mit vielen Gewinnwegen.</li>
+            <li>• Live Blackjack – echtes Dealer-Erlebnis per HD-Stream.</li>
+            <li>• Live Roulette – Roulette in Echtzeit mit professionellen Dealern.</li>
+            <li>• Live Baccarat – elegantes Live-Casino-Spiel mit schnellem Ablauf.</li>
+            <li>• Swiss Poker Championship – Online-Qualifikation, Turniere und Live Final mit starkem Preispool.</li>
+        </ul><br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Swiss Casino Pfäffikon – Mindesteinsätze und Höchsteinsätze nach Spielen
+</h3>
+<p>
+Im Swiss Casino Pfäffikon finden Sie flexible Einsatzbereiche für unterschiedliche Spielstile. Unsere Spielautomaten starten bereits ab CHF 0.01, während Tischspiele wie Black Jack, American Roulette und Ultimate Texas Hold’em ein klassisches Live-Casino-Erlebnis bieten. Online hängen die Einsätze vom jeweiligen Spiel und Tisch ab, wodurch Slots, Live Casino und Poker besonders vielseitig bleiben. Die folgende Übersicht zeigt zentrale Einsatzbereiche in unserem Casino.
+</p>
+<br>
+<div style="width:100%; max-width:100%; overflow:hidden;">
+  <table style="width:100%; max-width:100%; border-collapse:collapse; table-layout:fixed; font-family:Arial, sans-serif; font-size:clamp(9px, 2.2vw, 14px); color:#ffffff; background:transparent;">
+    <tr>
+      <th style="width:32%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Spiel / Bereich
+      </th>
+      <th style="width:22%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Mindesteinsatz
+      </th>
+      <th style="width:22%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Höchsteinsatz
+      </th>
+      <th style="width:24%; border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); text-align:left; vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">
+        Besonderheit
+      </th>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Spielautomaten</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 0.01</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 25</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">162 Slots, Video Poker, Jackpots</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Multi-Roulette</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 1</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Nach Terminallimit</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Even Money, Kolonnen und Dutzende ab CHF 10</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">American Roulette</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Ab CHF 5</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Nach Tischlimit</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Even Money, Kolonnen und Dutzende ab CHF 25</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Black Jack</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 10</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Nach Tischlimit</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">3 Tische, Powerplay und BlackJackPot</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Ultimate Texas Hold’em</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 5</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 100</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Ante und Blind je mindestens CHF 5</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Online Cash It Multiplayer</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 0.10</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">CHF 100</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Multiplikator bis x5000</td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Online Live Casino</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Je nach Tisch</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Je nach Tisch</td>
+      <td style="border:1px solid #ffffff; padding:clamp(5px, 1.5vw, 10px); vertical-align:top; color:#ffffff; background:transparent; word-break:break-word;">Live Roulette, Live Blackjack, Live Baccarat</td>
+    </tr>
+  </table>
+</div>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Swiss Casino Pfäffikon – Events, Shows, Nightlife und Unterhaltung
+</h3>
+<p>
+Im Swiss Casino Pfäffikon gestalten wir Unterhaltung als Zusammenspiel aus Spiel, Bar, Lounge, Kulinarik und besonderen Momenten. Unser Eventkalender umfasst regelmässige Aktionen, Jackpot-Formate, saisonale Specials, Poker-Promotions und thematische Abende. Gäste, die den Abend dynamisch erleben möchten, starten an den Automaten, wechseln an Roulette oder Black Jack und geniessen danach Cocktails in der Gambler’s Bar. Besonders am Wochenende entfaltet unser Casino seinen späten Rhythmus, denn freitags und samstags sind wir bis 05:00 Uhr geöffnet. So entsteht eine elegante Nightlife-Atmosphäre mit Casino-Feeling, Drinks, Begegnungen und spannenden Spielmomenten.
+</p>
+<p>
+Regelmässige Unterhaltung spielt bei uns eine zentrale Rolle. Jackpot Bingo bringt ein geselliges Format mit Gewinnen bis CHF 300 und zusätzlichem CHF 50 Jackpot-Bonus. Gambling Night sorgt für Party-Stimmung, Spielenergie und einen lebendigen Abend. Mystery Night und saisonale Specials bringen besondere Themen, Dekoration und überraschende Akzente ins Haus. Parking Deal, Foodtruck Plaza BITE und Member-Club-Verlosungen ergänzen das Programm mit Komfort, Genuss und zusätzlichen Gewinnchancen.
+</p>
+<p>
+Poker-Fans erleben bei uns auch digital eine starke Eventwelt. Die Swiss Poker Championship führt über Online-Qualifikationen, Freerolls, Step-Turniere, Cash Games, Leaderboards und Wild Cards zum Live Final mit CHF 100 000 Preispool. Zusätzlich stehen exklusive Poker-Promotions mit einem Gesamtwert von über CHF 40 000 bereit. Countdown Missions, SPC Cash Games, Twisters und tägliche Leaderboards bringen neue Ziele in jede Session. Damit verbinden wir Online-Spiel, Community und Live-Erlebnis zu einer starken Casino-Reise.
+</p>
+<p>
+Für private und geschäftliche Anlässe bieten wir zudem Event-Casino an. Mit professionellen Croupiers, Casinotischen und echter Spielatmosphäre bringen wir das Casino-Erlebnis an ausgewählte Eventorte. Im Swiss Casino Pfäffikon selbst kombinieren Sie Entertainment mit Gambler’s Bar, KAORI Restaurant, OLEA Restaurant und der Hotelinfrastruktur von SEEDAMM PLAZA. Unser Anspruch ist ein Abend, der Spiel, Genuss, Begegnung und Stil mühelos vereint.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Unterhaltung im Casino
+</h3>
+<ul>
+            <li>• Gambling Night – Abend mit Party-Stimmung, Spielmomenten und Bar-Atmosphäre.</li>
+            <li>• Jackpot Bingo – geselliges Spiel mit Gewinnen bis CHF 300 und CHF 50 Jackpot-Zusatzchance.</li>
+            <li>• Mystery Night – thematischer Abend mit Spannung, Dekoration und besonderem Ambiente.</li>
+            <li>• Jackpot Events – Aktionen rund um Cash Connection, Bell Link, Prosperity Link und Royal Jackpot.</li>
+            <li>• Gambler’s Bar Nights – Lounge-Feeling mit Cocktails, Drinks und Casino-Nightlife.</li>
+            <li>• Seasonal Specials – wechselnde Aktionen zu besonderen Terminen und Saisonhöhepunkten.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Poker und Online Events
+</h3>
+<ul>
+            <li>• Swiss Poker Championship – Qualifikation online und Live Final mit CHF 100 000 Preispool.</li>
+            <li>• SPC Freerolls – kostenlose Turniere mit Tickets für weitere Steps.</li>
+            <li>• SPC Step-Turniere – strukturierter Weg bis zum Live Final.</li>
+            <li>• SPC Cash Game – exklusive Cash-Game-Tische für Swiss-Casinos-Spieler.</li>
+            <li>• SPC Leaderboards – tägliche Ranglisten mit Free Blinds, Tickets und Wild Card Points.</li>
+            <li>• SPC Twister – Pokerformat mit Multiplikatoren und Preis-Pool-Potenzial bis €10 000.</li>
+            <li>• Wild Cards – direkte Chancen auf die Teilnahme am Live Final.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Specials und Event-Casino
+</h3>
+<ul>
+            <li>• Parking Deal – komfortable Aktion für Gäste, die mit dem Auto anreisen.</li>
+            <li>• Foodtruck Plaza BITE – unkomplizierter Genuss zwischen den Spielmomenten.</li>
+            <li>• Swiss Casinos Member Club Verlosung – zusätzliche Gewinnchancen für Clubmitglieder.</li>
+            <li>• Event-Casino – mobile Casino-Atmosphäre mit Tischen und professionellen Croupiers.</li>
+            <li>• Private und Corporate Events – Spiel, Unterhaltung und elegantes Casino-Feeling für besondere Anlässe.</li>
+        </ul><br>
+<h3 style = "font-weight: bold;font-size: 32px;">
+Swiss Casino Pfäffikon – Bars, Restaurants, Hotels und Erholung
+</h3>
+<p>
+Im Swiss Casino Pfäffikon verbinden wir Spiel mit Genuss, Lounge-Kultur und komfortabler Erholung. Die Gambler’s Bar ist unser zentraler Treffpunkt für Cocktails, Drinks und entspannte Pausen zwischen den Spielmomenten. Hier starten Gäste ihren Abend, stossen auf besondere Momente an oder wechseln stilvoll vom Spielsaal in eine ruhigere Atmosphäre. Die Bar passt ideal zu Roulette, Black Jack, Slots und Ultimate Texas Hold’em, weil sie den Abend nicht unterbricht, sondern elegant ergänzt.
+</p>
+<p>
+Kulinarisch profitieren Sie von starken Restaurants im Umfeld unseres Casinos. KAORI Restaurant bringt japanische Küche mit Maki, Futomaki, Hosomaki, Uramaki, Nigiri, Sashimi, KAORI Bowls, Salad Bowls und passenden Getränken auf den Tisch. OLEA Restaurant steht für mediterranen Genuss, ausgewählte Drinks, Wine-Bar-Atmosphäre und ein entspanntes Feriengefühl. Bei warmem Wetter ergänzt die Terrasse den Besuch besonders stimmungsvoll. So lässt sich der Casinobesuch ideal mit Dinner, Drinks oder einem genussvollen Abend verbinden.
+</p>
+<p>
+Für Gäste, die länger bleiben möchten, bietet die Hotelumgebung zusätzliche Möglichkeiten. Durch die Nähe zu SEEDAMM PLAZA verbinden Sie Casino, Restaurant, Bar, Event und Übernachtung auf besonders bequeme Weise. Hotel First in Feusisberg ergänzt das Angebot mit eleganter Ausstattung, zentraler Lage und einem ruhigen Rahmen für Businessgäste, Paare und Familien. So entsteht aus einem Casinobesuch ein kompletter Aufenthalt mit Spiel, Kulinarik und Erholung.
+</p>
+<p>
+Wir empfehlen besonders die Kombination aus Play and Dine. Beginnen Sie mit mediterranem Genuss im OLEA, erleben Sie danach American Roulette oder Black Jack und lassen Sie den Abend in der Gambler’s Bar ausklingen. Alternativ wählen Sie KAORI für japanische Küche und wechseln anschliessend zu Slots, Multi-Roulette oder Ultimate Texas Hold’em. Für private Anlässe, Gruppen und besondere Abende schaffen Bar, Restaurants, Casino Floor und Hotelumfeld eine starke Erlebnisbasis. Im Swiss Casino Pfäffikon gestalten Sie Ihren Abend nach Ihrem Rhythmus: spielen, geniessen, verweilen und entspannen.
+</p>
+<br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Bars und Lounge
+</h3>
+<ul>
+            <li>• Gambler’s Bar – Casino-Bar mit Cocktails, Drinks und entspannter Lounge-Atmosphäre.</li>
+            <li>• Casino Floor Lounge – angenehme Pausenbereiche zwischen Automaten, Tischen und Bar.</li>
+            <li>• Smoking Gaming Area – bedienter Raucherbereich mit Spielautomaten.</li>
+            <li>• Free Cloakroom – kostenlose Garderobe für einen komfortablen Abend.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Restaurants
+</h3>
+<ul>
+            <li>• KAORI Restaurant – japanische Küche mit Sushi, Sashimi, Bowls, Sake, Wein, Bier und Tee.</li>
+            <li>• OLEA Restaurant – mediterrane Küche mit See-Atmosphäre, Wine Bar und Terrasse.</li>
+            <li>• OLEA Terrace – saisonaler Genuss im Freien für entspannte Momente vor oder nach dem Spiel.</li>
+            <li>• Foodtruck Plaza BITE – lockerer Genuss bei ausgewählten Aktionen und Events.</li>
+        </ul><br>
+<h3 style = "font-weight: bold; font-size: 24px;">
+Hotels und Aufenthalt
+</h3>
+<ul>
+            <li>• SEEDAMM PLAZA – Hotel-, Restaurant- und Eventumfeld direkt beim Casino.</li>
+            <li>• Hotel First – Businesshotel in Feusisberg mit eleganter Ausstattung und ruhigem Rahmen.</li>
+            <li>• Play and Dine – Kombination aus Dinner, Casino-Spiel und Barbesuch.</li>
+            <li>• Event-Casino – Casino-Feeling für private und geschäftliche Anlässe.</li>
+        </ul><br></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="faq">
+            <div class="container">
+                <div class="faqBlock block">
+                    <h2 class="faqTitle title"><span>FAQ </span></h2>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="gibt_es_unterschiedliche_spielbereiche"/><label
+                            class="faqLabel" for="gibt_es_unterschiedliche_spielbereiche">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Gibt es unterschiedliche Spielbereiche? </span></label>
+                        <div class="faqContent">
+                            <p>Informationen zu Spielbereichen werden über die offiziellen Casino-Informationen bereitgestellt.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="wo_finden_gste_informationen_zu_mindesteinstzen"/><label
+                            class="faqLabel" for="wo_finden_gste_informationen_zu_mindesteinstzen">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Wo finden Gäste Informationen zu Mindesteinsätzen? </span></label>
+                        <div class="faqContent">
+                            <p>Unsere Gäste finden Informationen zu Einsätzen in den offiziellen Regeln oder Informationen des jeweiligen Spiels.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="wo_finden_gste_informationen_zu_hchsteinstzen"/><label
+                            class="faqLabel" for="wo_finden_gste_informationen_zu_hchsteinstzen">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Wo finden Gäste Informationen zu Höchsteinsätzen? </span></label>
+                        <div class="faqContent">
+                            <p>Informationen zu Höchsteinsätzen werden über die offiziellen Spielinformationen unseres Casinos kommuniziert.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="gibt_es_regeln_fr_den_zutritt_zum_casino"/><label
+                            class="faqLabel" for="gibt_es_regeln_fr_den_zutritt_zum_casino">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Gibt es Regeln für den Zutritt zum Casino? </span></label>
+                        <div class="faqContent">
+                            <p>Zutrittsregeln werden über die offiziellen Informationen unseres Casinos bereitgestellt.</p>
+                        </div>
+                    </div>
+                    <div class="faqGroup"><input class="faqInput" type="checkbox" id="wo_knnen_gste_die_casinoregeln_lesen"/><label
+                            class="faqLabel" for="wo_knnen_gste_die_casinoregeln_lesen">
+
+                        <svg class="faqIcon" width="24" height="24" aria-hidden="true">
+                            <use class="plus" href="#plus-icon"></use>
+                            <use class="minus" href="#minus-icon"></use>
+                        </svg>
+
+                        <span class="gradientContainer"> Wo können Gäste die Casino-Regeln lesen? </span></label>
+                        <div class="faqContent">
+                            <p>Unsere Gäste können die Casino-Regeln auf den entsprechenden offiziellen Informationsseiten lesen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="footerContainer">
+        <div class="footerTop">
+            <div class="footerLogoContainer"><a href="https://pfaeffikon-casino.com" aria-label="Main page"><img class="footer__logo"
+                                                                                                     src="_assets/images/1781868932-logo.svg" alt="" width="140"
+                                                                                                     height="48" /></a></div>
+            <div class="footerPay">
+                <div class="payBlock"><img class="payElementGrey"
+                                           src="./assets/images/footer/payment/masterCard.svg" alt="MasterCard" /><img
+                        class="payElementColor" src="./assets/images/footer/payment/masterCard--color.svg"
+                        alt="MasterCard" title="MasterCard in Pfaeffikon Casino" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/visa.svg"
+                                           alt="Visa" /><img class="payElementColor"
+                                                             src="./assets/images/footer/payment/visa--color.svg" alt="Visa" title="Visa in Pfaeffikon Casino" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/neteller.svg"
+                                           alt="Neteller" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/neteller--color.svg" alt="Neteller" title="Neteller in Pfaeffikon Casino" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/skrill.svg"
+                                           alt="Skrill" /><img class="payElementColor"
+                                                               src="./assets/images/footer/payment/skrill--color.svg" alt="Skrill" title="Skrill in Pfaeffikon Casino" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/bitcoin.svg"
+                                           alt="Bitcoin" /><img class="payElementColor"
+                                                                src="./assets/images/footer/payment/bitcoin--color.svg" alt="Bitcoin" title="Bitcoin in Pfaeffikon Casino" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/litecoin.svg"
+                                           alt="Litecoin" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/litecoin--color.svg" alt="Litecoin" title="Litecoin in Pfaeffikon Casino" /></div>
+                <div class="payBlock"><img class="payElementGrey" src="./assets/images/footer/payment/ethereum.svg"
+                                           alt="Etherium" /><img class="payElementColor"
+                                                                 src="./assets/images/footer/payment/ethereum--color.svg" alt="Etherium" title="Etherium in Pfaeffikon Casino" /></div>
+            </div>
+        </div>
+        <div class="footerMiddle">
+            <div class="footerOperator">
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gpwa.svg" alt="GPWA" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gpwa--color.svg"
+                        alt="GPWA" title="GPWA in Pfaeffikon Casino" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gambleaware.svg" alt="Gamble Aware" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gambleaware--color.svg"
+                        alt="Gamble Aware" title="Gamble Aware in Pfaeffikon Casino" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gamcare.svg" alt="Game care" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gamcare--color.svg"
+                        alt="Game care" title="Game care in Pfaeffikon Casino" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gambling-therapy.svg" alt="Gambling Therapy" /><img
+                        class="operatorElementColor"
+                        src="./assets/images/footer/operator/gambling-therapy--color.svg" alt="Gambling Therapy" title="Gambling Therapy in Pfaeffikon Casino" />
+                </div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/gamban.svg" alt="Gamban" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/gamban--color.svg"
+                        alt="Gamban" title="Gamban in Pfaeffikon Casino" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/betblocker.svg" alt="BetBlocker" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/betblocker--color.svg"
+                        alt="BetBlocker" title="BetBlocker in Pfaeffikon Casino" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/itech_labs.svg" alt="ITech Labs" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/itech_labs--color.svg"
+                        alt="ITech Labs" title="ITech Labs in Pfaeffikon Casino" /></div>
+                <div class="operatorBlock"><img class="operatorElementGrey"
+                                                src="./assets/images/footer/operator/ecogra.svg" alt="Ecogra" /><img
+                        class="operatorElementColor" src="./assets/images/footer/operator/ecogra--color.svg"
+                        alt="Ecogra" title="Ecogra in Pfaeffikon Casino" /></div>
+            </div>
+        </div>
+        <div class="footerNavBlock">
+            <nav>
+                <ul class="nav__list--footer">
+                    <li class="footer__navItem"><a href="index">index</a></li>
+                    <li class="footer__navItem"><a href="restaurants">Restaurants</a></li>
+                    <li class="footer__navItem"><a href="online">Online</a></li>
+                    <li class="footer__navItem"><a href="vip">VIP</a></li>
+                    <li class="footer__navItem"><a href="events">Events</a></li>
+                    <li class="footer__navItem"><a href="uberuns">Über uns</a></li>
+                    <li class="footer__navItem"><a href="nutzungsbedingungen">Nutzungsbedingungen</a></li>
+                    <li class="footer__navItem"><a href="datenschutz">Datenschutz</a></li>
+                    <li class="footer__navItem"><a href="faq">FAQ</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="footerBottom">
+            <div class="footerBottomGroup">
+                <p class="footerBottomAge">18+</p>
+                <p class="footerBottomCopyright">Copyright © <span class="js-current-year"></span> Pfaeffikon Casino </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var playButtonName = "#play-icon";
+    var informationOutlineName =
+        "#information-outline";
+    var topCasinoButtonText = "Bonus sichern";
+    var welcomeBonusText = "Willkommensbonus";
+    var bonusDetailsButtonText = "";
+    var playNowText = "Jetzt spielen";
+    var maximumAmountText = "";
+    var wagerText = "";
+    var bonusCodeText = "";
+    var depositText = "";
+    var casinoName = "Pfaeffikon Casino";
+</script>
+
+</body>
+</html>
